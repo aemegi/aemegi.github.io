@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Andrea Crofoot">
+        <title>Plants. A Bootstrap Template.</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+            <!-- jQuery first, then Popper.js-->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+       <style>        
+        html {
+            /*For smooth scrolling behavior*/
+            scroll-behavior: smooth;
+        }
+        
+        h1,
+        h2 {
+            padding-top: 150px;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        /*the following is for the search feature*/
+        .is-hidden { display: none; }
+        </style>
+        
+        <script>
+        //search code
+            function liveSearch() {
+                // Locate the card elements
+                let cards = document.querySelectorAll('.cards')
+                // Locate the search input
+                let search_query = document.getElementById("searchbox").value;
+                // Loop through the cards
+                for (var i = 0; i < cards.length; i++) {
+                    // If the text is within the card...
+                    if(cards[i].innerText.toLowerCase()
+                    // ...and the text matches the search query...
+                    .includes(search_query.toLowerCase())) {
+                        // ...remove the `.is-hidden` class.
+                        cards[i].classList.remove("is-hidden");
+                    } else {
+                    // Otherwise, add the class.
+                    cards[i].classList.add("is-hidden");
+                    }
+                }
+            // A little delay
+            let typingTimer;        
+            let typeInterval = 500; // Half a second
+            let searchInput = document.getElementById('searchbox');
+
+            searchInput.addEventListener('keyup', () => {
+            clearTimeout(typingTimer);
+            typingTimer = setTimeout(liveSearch, typeInterval);
+            });
+            }
+
+        
+        </script>
+        
+        <!-- Custom styles for this template -->
+        <link href="assets/css/navbar.css" rel="stylesheet">    
+        <!-- Custom styles for this template -->
+        <link href="assets/css/carousel.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="assets/css/heroes.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="assets/css/pricing.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="assets/css/product.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <!--div for link to top of page-->
+    <div id="top"></div>
+
+
+    <!--***************************************************************************************-->
+    <!--******************************** BEGIN NAVIGATION *************************************-->
+    <!--***************************************************************************************-->
+        <nav id="navigation" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navbar-default" aria-label="Fourth navbar example">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#top">Plants</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#light">Light</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#water">Water</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#soil">Soil</a>
+                  </li> 
+                  <li class="nav-item" style="font-size: large;">&#10087;</li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#plantshaveparts">The Parts of a Plant</a>
+                  </li>
+                </ul>
+                <form role="search">
+                    <input  class="form-control" type="search" placeholder="Search" aria-label="Search"
+                    type="search" 
+                    oninput="liveSearch()" 
+                    id="searchbox" 
+                    >
+                </form>
+              </div>
+            </div>
+        </nav>
+        
+    <!--***************************************************************************************-->
+    <!--********************************** END NAVIGATION *************************************-->
+    <!--***************************************************************************************-->
+             
+        <main>
+
+    
+    <!--***************************************************************************************-->
+    <!--******************************** BEGIN TIMELAPSE COVER ********************************-->
+    <!--***************************************************************************************-->
+
+            <div id="myCarousel" class="cards carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+              </div>
+              <div class="carousel-inner">
+                <div class="cards carousel-item active">
+                  <img class="" src="assets/img/video.gif">
+                  <div class="container">
+                    <div class="carousel-caption text-start">
+                      <h1>Plants.</h1>
+                      <p>A Bootstrap Template.</p>
+                      <p><a class="btn btn-lg btn-success" href="#plantseverywhere">Learn More...</a></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          
+    
+    <!--***************************************************************************************-->
+    <!--********************************** END TIMELAPSE COVER ********************************-->
+    <!--***************************************************************************************-->
+
+        
+    <!--***************************************************************************************-->
+    <!--******************************** BEGIN MAIN CONTENT ***********************************-->
+    <!--***************************************************************************************-->
+      
+            <div id="plantseverywhere" class="cards px-4 py-5 my-5 text-center">
+                <h1 class="display-5 fw-bold">Plants: They're Everywhere.</h1>
+                <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4"><i><small>From Wikipedia, the free encyclopedia:</small></i> Plants are eukaryotes, predominantly photosynthetic, that form the kingdom Plantae. Many are multicellular. Historically, the plant kingdom encompassed all living things that were not animals, and included algae and fungi. All current definitions exclude the fungi and some of the algae. By one definition, plants form the clade Viridiplantae (Latin for "green plants") which consists of the green algae and the embryophytes or land plants. The latter include hornworts, liverworts, mosses, lycophytes, ferns, conifers and other gymnosperms, and flowering plants. A definition based on genomes includes the Viridiplantae, along with the red algae and the glaucophytes, in the clade Archaeplastida. </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a class="btn btn-lg btn-outline-success" href="#plantshaveneeds">What Do They Need?</a>
+                </div>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-3">
+                    <a class="cards btn btn-lg btn-outline-info" href="#plantshaveparts">What Are They?</a>
+                </div>
+                </div>
+            </div>
+        
+    <!--***************************************************************************************-->
+    <!--******************************** END MAIN CONTENT *************************************-->
+    <!--***************************************************************************************-->
+
+            <div id="plantshaveneeds" class="cards px-4 py-5 my-5 text-center">
+                <h2></h2>
+            <h2 class="cards display-5 fw-bold my-5 text-center">The Needs Of A Plant.</h2>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                <div class="cards card mb-4 rounded-3 shadow-sm border-warning">
+                    <div class="card-header py-3 text-bg-warning border-warning">
+                    <h4 class="my-0 fw-normal">Light</h4>
+                    </div>
+                    <div class="card-body">
+                    <h3 class="card-title pricing-card-title">Red & Blue<small class="text-muted fw-light"></small></h3>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        
+                    </ul>
+                    <a class="w-100 btn btn-lg btn-outline-warning" href="#light">More Info</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="cards card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Water</h4>
+                    </div>
+                    <div class="card-body">
+                    <h3 class="card-title pricing-card-title">H<sub>2</sub>O<small class="text-muted fw-light"></small></h3>
+                    <ul class="list-unstyled mt-3 mb-4">
+                    </ul>
+                    <a class="w-100 btn btn-lg btn-outline-primary" href="#water">More Info</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="cards card mb-4 rounded-3 shadow-sm border-success">
+                    <div class="card-header py-3 text-bg-success border-success">
+                    <h4 class="my-0 fw-normal">Soil</h4>
+                    </div>
+                    <div class="card-body">
+                    <h3 class="card-title pricing-card-title">N, P, K, Ca, Mg, S<small class="text-muted fw-light"></small></h3>
+                    <ul class="list-unstyled mt-3 mb-4">
+                    </ul>
+                    <a class="w-100 btn btn-lg btn-outline-success" href="#soil">More Info</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+                <a class="btn btn-sm btn-success" href="#plantseverywhere"><i style="font-size:24px" class="fa">&#xf077;</i></a>
+            </div>
+
+
+            <div id="light" class="cards position-relative overflow-hidden p-3 p-md-5 m-md-3 my-5 text-center bg-light">
+                <div class="col-md-5 p-lg-5 mx-auto my-5" style="min-height: 100%;">
+                  <h3 class="display-4 fw-normal page-section">Light</h3>
+                  <p class="lead fw-normal"><i><small>From Wikipedia, the free encyclopedia:</small></i> Light or visible light is electromagnetic radiation that can be perceived by the human eye. Visible light is usually defined as having wavelengths in the range of 400–700 nanometres (nm), corresponding to frequencies of 750–420 terahertz, between the infrared (with longer wavelengths) and the ultraviolet (with shorter wavelengths).</p>
+                </div>
+                <a class="btn btn-lg btn-success" href="#plantshaveneeds"><i style="font-size:24px" class="fa">&#xf077;</i></a>
+                <!--<div class="product-device shadow-sm d-none d-md-block"></div>
+                <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>-->
+              </div>
+            
+              <div id="water" class="cards position-relative overflow-hidden p-3 p-md-5 m-md-3 my-5 text-center bg-dark">
+                <div class="col-md-5 p-lg-5 mx-auto my-5 text-bg-dark">
+                    <h3 class="display-4 fw-normal page-section">Water</h3>
+                    <p class="lead"><i><small>From Wikipedia, the free encyclopedia:</small></i>Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance, and it is the main constituent of Earth's hydrosphere and the fluids of all known living organisms (in which it acts as a solvent). It is vital for all known forms of life, despite not providing food energy, or organic micronutrients. Its chemical formula, H2O, indicates that each of its molecules contains one oxygen and two hydrogen atoms, connected by covalent bonds. The hydrogen atoms are attached to the oxygen atom at an angle of 104.45°. "Water" is also the name of the liquid state of H2O at standard temperature and pressure. </p>
+                  </div>
+                  <a class="btn btn-lg btn-success" href="#plantshaveneeds"><i style="font-size:24px" class="fa">&#xf077;</i></a>
+                  <!--<div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>-->
+                </div>
+
+                <div id="soil" class="cards bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                  <div class="my-3 p-3">
+                    <h3 class="display-5 page-section">Soil</h3>
+                    <p class="lead"><i><small>From Wikipedia, the free encyclopedia:</small></i>Soil, also commonly referred to as earth, is a mixture of organic matter, minerals, gases, liquids, and organisms that together support life of plants and soil organisms. Some scientific definitions distinguish dirt from soil by restricting the former term specifically to displaced soil. </p>
+                  </div>
+                  <a class="btn btn-lg btn-success" href="#plantshaveneeds"><i style="font-size:24px" class="fa">&#xf077;</i></a>
+                  <!--<div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>-->
+                </div>
+              </div>
+
+              <div id="plantshaveparts" class="cards my-5">
+              <div class="container marketing">
+              <h2 class="cards display-5 fw-bold text-center">The Parts Of A Plant.</h2>
+
+                <!-- Three columns of text below the carousel -->
+                <div class="row" style="margin-top: 150px;">
+                  <div id="roots" class="col-lg-4">
+                    <img src="assets/img/roots.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            
+                    <h3 class="fw-normal">Roots</h3>
+                    <p><i><small>From Wikipedia, the free encyclopedia:</small></i> In vascular plants, the roots are the organs of a plant that are modified to provide anchorage for the plant and take in water and nutrients into the plant body, which allows plants to grow taller and faster. They are most often below the surface of the soil, but roots can also be aerial or aerating, that is, growing up above the ground or especially above water. </p>
+
+                  </div><!-- /.col-lg-4 -->
+                  <div id="stems" class="col-lg-4">
+                    <img src="assets/img/stems.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            
+                    <h3 class="fw-normal">Stems</h3>
+                    <p><i><small>From Wikipedia, the free encyclopedia:</small></i> A stem is one of two main structural axes of a vascular plant, the other being the root. It supports leaves, flowers and fruits, transports water and dissolved substances between the roots and the shoots in the xylem and phloem, stores nutrients, and produces new living tissue. The stem can also be called halm or haulm or culms. </p>
+
+                  </div><!-- /.col-lg-4 -->
+                  <div id="leaves" class="col-lg-4">
+                    <img src="assets/img/leaves.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            
+                    <h3 class="fw-normal">Leaves</h3>
+                    <p><i><small>From Wikipedia, the free encyclopedia:</small></i> A leaf (PL: leaves) is a principal appendage of the stem of a vascular plant, usually borne laterally aboveground and specialized for photosynthesis. Leaves are collectively called foliage, as in "autumn foliage", while the leaves, stem, flower, and fruit collectively form the shoot system. </p>
+                    <p><a class="btn btn-secondary" href="#flowers">and don't forget... &raquo;</a></p> 
+                  </div><!-- /.col-lg-4 -->                 
+                </div><!-- /.row -->
+            
+            
+            </div>
+            
+                <div id="flowers" class="cards container col-xxl-8 px-4 py-5">
+                    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="assets/img/flower.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="display-5 fw-bold lh-1 mb-3">Flowers.</h3>
+                        <p class="lead"><small>From Wikipedia, the free encyclopedia:</small></i>A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae). Flowers produce gametophytes, which in flowering plants consist of a few haploid cells which produce gametes. The "male" gametophyte, which produces non-motile sperm, is enclosed within pollen grains; the "female" gametophyte is contained within the ovule. When pollen from the anther of a flower is deposited on the stigma, this is called pollination. Some flowers may self-pollinate, producing seed using pollen from the same flower or a different flower of the same plant, but others have mechanisms to prevent self-pollination and rely on cross-pollination, when pollen is transferred from the anther of one flower to the stigma of another flower on a different individual of the same species. </p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-sm btn-success" href="#top"><i style="font-size:24px" class="fa">&#xf077;</i></a>
+                </div>
+        </main>
+
+        <footer class="py-3 my-4">
+                <div class="container">
+                      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="http://andreacrofoot.name" class="nav-link px-2 text-muted">WebDeveloper's Site</a></li>
+                      </ul>
+                      <p class="text-center text-muted">&copy; 2023</p>
+                  </div>
+        </footer>
+                  
+
+                <!-- JavaScript code for scrollspy on same row -->
+                <script>
+  
+                    /* Code for changing active 
+                    link on clicking */
+                    var btns = 
+                        $("#navigation .navbar-nav .nav-link");
+          
+                    for (var i = 0; i < btns.length; i++) {
+                        btns[i].addEventListener("click",
+                                              function () {
+                            var current = document
+                                .getElementsByClassName("active");
+          
+                            current[0].className = current[0]
+                                .className.replace(" active", "");
+          
+                            this.className += " active";
+                        });
+                    }
+          
+                </script>
+    </body>
+</html>
+  

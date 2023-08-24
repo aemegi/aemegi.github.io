@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Andrea Crofoot - WebDeveloper</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 1024px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      } 
+      
+      /* Style all font awesome icons */
+
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        border-radius: 50%;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      /* Add a hover effect if you want */
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      /* Set a specific color for each brand */
+
+
+
+      .fa {
+        background: pink;
+        color: white;
+      } 
+
+      /*contact form */
+      body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+
+@media only screen and (max-width: 1800px) {
+  #title {
+    position: relative;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #title {
+    width: 20%; position: fixed; z-index: 99; padding-left: 20px;
+  }
+}
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+  <header>      
+    <div id="title">
+            <h6 class="">hello world!</h6>      
+            <p class="">my name is andrea.</p>
+            <p class="">I am a webdeveloper.</p>
+            <p class="">this is my portfolio.</p>
+          
+    </div>
+  </header>
+  <main>
+
+    <div class="album py-5">
+      <div class="container">
+  
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/fairybooks-img-1.png">
+              <div class="card-body">
+                <p class="card-text">read fairy books online</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="http://fairybooks.online"><button type="button" class="btn btn-sm btn-outline-secondary">view</button></a>
+                    <a href="zips/fairybooks.zip"><button type="button" class="btn btn-sm btn-outline-secondary">src code</button></a>
+                  </div>
+                  <small class="text-muted">HTML/CSS/PHP/MySQL</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/periodictable-img-1.jpg">
+              <div class="card-body">
+                <p class="card-text">Periodic Table of the Elements</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="periodictable.html"><button type="button" class="btn btn-sm btn-outline-secondary">view</button></a>
+                    <a href="zips/periodictable.zip"><button type="button" class="btn btn-sm btn-outline-secondary">src code</button></a>
+                  </div>
+                  <small class="text-muted">HTML/CSS</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/bookkeeper.jpg">
+              <div class="card-body">
+                <p class="card-text">Mary Wallace - Bookkeeper. A CSS Template.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="designs/maryWallace/index.html"><button type="button" class="btn btn-sm btn-outline-secondary">view</button></a>
+                    <a href="designs/maryWallace/maryWallaceTemplate.zip"><button type="button" class="btn btn-sm btn-outline-secondary">src code</button></a>
+                  </div>
+                  <small class="text-muted">HTML/CSS/JavaScript</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/folktale-img-1.jpg">
+              <div class="card-body">
+                <p class="card-text">FolkTale.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://andreacrofoot.wixsite.com/folktale"><button type="button" class="btn btn-sm btn-outline-secondary">view</button></a>
+                  </div>
+                  <small class="text-muted">Wix/DSers</small>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div class="col">
+  <div class="card shadow-sm">
+    <img src="img/gemtrails-img-1.jpg" alt="Google Maps Displaying Gem Trails From Gem Trails of Washington by Garret Romaine">
+    <div class="card-body">
+      <p class="card-text">Gem Trails of Washington.</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <a href="/gemtrails"><button type="button" class="btn btn-sm btn-outline-secondary">view</button></a>
+          <a href="/zips/gemtrails.zip"><button type="button" class="btn btn-sm btn-outline-secondary">src code</button></a>
+        </div>
+        <small class="text-muted">JavaScript/GoogleMaps API</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm">
+    <img src="img/ihdb-img-1.jpg" alt="A Database of Herbs and their uses">
+    <div class="card-body">
+      <p class="card-text">Internet Herbal Database.</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <a href="/ihdb"><button type="button" class="btn btn-sm btn-outline-secondary">view</button></a>
+          <a href="/zips/ihdb.zip"><button type="button" class="btn btn-sm btn-outline-secondary">src code</button></a>
+        </div>
+        <small class="text-muted">PHP/MySQL</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm">
+    <img src="img/plants-img-1.jpg" alt="">
+    <div class="card-body">
+      <p class="card-text">Plants; A Bootstrap Template.</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <a href="/plants"><button type="button" class="btn btn-sm btn-outline-secondary">view</button></a>
+          <a href="/zips/plants.zip"><button type="button" class="btn btn-sm btn-outline-secondary">src code</button></a>
+        </div>
+        <small class="text-muted">PHP/MySQL</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+  </main>
+  
+<main>
+
+    
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+<!--
+  <div class="container marketing" style="z-index: 1;">
+
+    
+
+
+    <!-- START THE FEATURETTES --
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES --
+
+  </div><!-- /.container -->
+
+  <section class="py-5 text-center container">
+    <div class="">
+      <div class="">
+          <a href="https://twitter.com/aemegi_" class="fa fa-twitter"></a>
+          <a href="https://www.linkedin.com/in/andi-cro/" class="fa fa-linkedin"></a>
+          <a href="https://github.com/andrene1/" class="fa fa-github"></a>
+          <a href="https://andicro.wordpress.com/" class="fa fa-wordpress"></a>
+          <a href="https://www.pinterest.com/aemegi0753/" class="fa fa-pinterest"></a>
+          <a href="mailto:andrea.crofoot@gmail.com" class="fa fa-envelope"></a>
+       
+      </div>
+    </div>
+  </section>
+<!--
+  <div id="contact" class="p-5 mb-4 text-center rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Contact</h1>
+      <?php
+
+
+
+
+      if (isset($_POST['submit'])) {
+      
+      //change this to the email you want site contact form sent to
+      $to = 'andrea.crofoot@gmail.com';
+      $subject = 'New Message from your website!';
+      // use wordwrap() if lines are longer than 70 characters
+      $msg = wordwrap($_POST['message'],70);
+      $msg = "From:" . $_POST['name'] . " @ " . $_POST['email'] . " | " . $msg;
+      
+      
+      // send email
+      mail($to,$subject,$msg);
+      echo "message sent";
+      
+      } else {}
+      
+      ?>
+      
+      <div class="container">
+        <form method="post" action="index.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="name" placeholder="Your name..">
+  
+          <label for="lname">Phone Number or Email</label>
+          <input type="text" id="contact" name="email" placeholder="Your phone number or email..">
+        
+      
+          <label for="subject">Message</label>
+          <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" name="submit" value="Submit">
+        </form>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p>All source code free for personal or educational use.</p>
+    <a href="https://www.buymeacoffee.com/aemegi">Buy Me a Coffee.</a>
+    <p class="float-end"><a href="#">Back to top</a></p>
+
+  </footer>
+</main>
+
+
+  
+
+      
+  </body>
+</html>

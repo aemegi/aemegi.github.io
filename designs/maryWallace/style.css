@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Satisfy&display=swap');
+
+body, html {
+    height: 100%;
+    background-color: black;
+    /*overflow: hidden;*/
+    color: whitesmoke;
+    font-family: 'Libre Baskerville', serif;
+}
+a {
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+button {
+    background-color: black;
+    border-width: 1px !important;
+    border-color: white !important;
+    font-size: larger;
+    width: max-content;
+    font-family: 'Satisfy', cursive;
+    color: white;
+}
+
+button:hover {
+    border-width: 1px;
+    border-color: white;
+    background-color: white !important;
+    color: black !important;
+    cursor: pointer;
+
+}
+
+.fa {
+    padding: 18px;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-width: 2px;
+    border-color: white;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      background: dimgray;
+      text-decoration: none;
+      border-width: 2px;
+      border-color: white;
+  }
+  
+  .fa {
+    background: black;
+    color: white;
+  }
+h1 {
+    text-transform: uppercase;
+    padding-left: 10%;
+}
+h2 {
+  font-family: 'Satisfy', cursive;
+  padding-left: 10%;
+}
+h3 {
+  font-family: 'Satisfy', cursive;
+  padding-left: 10%;
+}
+
+p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+ /*
+ * Mobile Viewport
+ */
+ 
+
+ @media screen and (max-width: 680px) {
+  #right {
+    position: relative;
+   
+}
+.hero-image {
+  display:none;
+}
+
+.mobile-image {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+}
+ 
+@media screen and (min-width: 680px) {
+  #right {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    width: 30%;
+}
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("woman.jpg");
+  
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 36%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.mobile-image {
+  display: none;
+}
+}
