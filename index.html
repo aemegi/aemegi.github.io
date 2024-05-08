@@ -12,327 +12,31 @@
       gtag('config', 'G-8FMF9079D3');
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      body {
-        background-color: whitesmoke;
-        display: flex;
-        flex-direction: column;
-        /* Add this line to make the footer appear at the bottom */
-        min-height: 100vh;
-        /* Add this line to make the footer appear at the bottom */
-      }
-
-      main {
-        background-color: darkseagreen;
-        width: 80%;
-        position: relative;
-        left: 10%;
-        flex: 1;
-        /* Add this line to make the main content take remaining vertical space */
-      }
-
-      .portfolio {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: left;
-      }
-
-      .tomatolovecarrot {
-        background: url('img/tomatolovecarrot-img-1.png');
-      }
-
-      .periodictable {
-        background: url('img/periodictable-img-1.jpg');
-      }
-
-      .tarotcards {
-        background: url('img/tarot-cards-img-1.png');
-      }
-
-      .bookkeeper {
-        background: url('img/bookkeeper.jpg');
-      }
-
-      .imgmapofspecies {
-        background: url('img/imgmapofspeices.png');
-      }
-
-      .color-crayons {
-        background: url('img/color-crayons-img-2.png');
-      }
-
-      .noahsark {
-        background: url('img/noahs-ark.png');
-      }
-
-      .runes {
-        background: url('img/runes-img-1.png');
-      }
-
-      .folktale {
-        background: url('img/folktale-img-1.png');
-      }
-
-      .folktale {
-        background: url('img/folktale-img-1.png');
-      }
-
-      .neonnomad {
-        background: url('img/neonnomad.png');
-      }
-
-      .formflow {
-        background: url('img/formflow.png');
-      }
-
-      .madlibs {
-        background: url('img/madlibs.png');
-      }
-
-      .container {
-        width: 400px;
-        height: 300px;
-        background-repeat: no-repeat;
-        background-color: black;
-        background-size: contain;
-        background-position: center;
-        -webkit-box-shadow: 0 0 5px #000;
-        box-shadow: 0 0 5px #000;
-        margin: 50px;
-      }
-
-      .overlay {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 2fr 1fr;
-        background: rgba(77, 77, 77, .9);
-        color: darkseagreen;
-        opacity: 0;
-        transition: all 0.5s;
-        font-family: 'Playfair Display', serif;
-      }
-
-      .items {
-        padding-left: 20px;
-        letter-spacing: 3px;
-      }
-
-      .head {
-        font-size: 30px;
-        line-height: 40px;
-        transform: translateY(40px);
-        transition: all 0.7s;
-
-        hr {
-          display: block;
-          width: 0;
-          border: none;
-          border-bottom: solid 2px darkseagreen;
-          position: absolute;
-          bottom: 0;
-          left: 20px;
-          transition: all .5s;
-        }
-      }
-
-      .price {
-        font-size: 22px;
-        line-height: 10px;
-        font-weight: bold;
-        opacity: 0;
-        transform: translateY(40px);
-        transition: all 0.7s;
-
-        .old {
-          text-decoration: line-through;
-          color: lighten(rgb(77, 77, 77), 40%);
-        }
-      }
-
-      .cart {
-        font-size: 12px;
-        opacity: 0;
-        letter-spacing: 1px;
-        font-family: 'Lato', sans-serif;
-        transform: translateY(40px);
-        transition: all 0.7s;
-
-        i {
-          font-size: 16px;
-        }
-
-        span {
-          margin-left: 10px;
-        }
-      }
-
-      .container:hover .overlay {
-        opacity: 1;
-
-        & .head {
-          transform: translateY(0px);
-        }
-
-        & hr {
-          width: 75px;
-          transition-delay: 0.4s;
-        }
-
-        & .price {
-          transform: translateY(0px);
-          transition-delay: 0.3s;
-          opacity: 1;
-        }
-
-        & .cart {
-          transform: translateY(0px);
-          transition-delay: 0.6s;
-          opacity: 1;
-        }
-      }
-
-      a {
-        text-decoration: none;
-        color: darkseagreen;
-      }
-
-      .avatar {
-        vertical-align: middle;
-        width: 250px;
-        border-radius: 50%;
-      }
-
-      footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        width: 80%;
-        margin-left: 10%;
-      }
-
-      .footerparent {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      .footerchild1 {
-        padding: 50px;
-        padding-left: 150px;
-        padding-right: 0px;
-      }
-
-      .footerchild2 {
-        max-width: 40%;
-        padding: 100px;
-      }
-
-      .footerchild3 {
-        max-width: 20%;
-        padding: 10px;
-        padding-top: 125px;
-        align-items: center;
-        justify-items: center;
-      }
-
-      /* The snackbar - position it at the bottom and in the middle of the screen */
-      #snackbar {
-        visibility: hidden;
-        /* Hidden by default. Visible on click */
-        min-width: 250px;
-        /* Set a default minimum width */
-        margin-left: -125px;
-        /* Divide value of min-width by 2 */
-        background-color: #333;
-        /* Black background color */
-        color: #fff;
-        /* White text color */
-        text-align: center;
-        /* Centered text */
-        border-radius: 2px;
-        /* Rounded borders */
-        padding: 16px;
-        /* Padding */
-        position: fixed;
-        /* Sit on top of the screen */
-        z-index: 1;
-        /* Add a z-index if needed */
-        left: 50%;
-        /* Center the snackbar */
-        bottom: 30px;
-        /* 30px from the bottom */
-      }
-
-      /* Show the snackbar when clicking on a button (class added with JavaScript) */
-      #snackbar.show {
-        visibility: visible;
-        /* Show the snackbar */
-        /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-  However, delay the fade out process for 2.5 seconds */
-        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-        animation: fadein 0.5s, fadeout 0.5s 2.5s;
-      }
-
-      /* Animations to fade the snackbar in and out */
-      @-webkit-keyframes fadein {
-        from {
-          bottom: 0;
-          opacity: 0;
-        }
-
-        to {
-          bottom: 30px;
-          opacity: 1;
-        }
-      }
-
-      @keyframes fadein {
-        from {
-          bottom: 0;
-          opacity: 0;
-        }
-
-        to {
-          bottom: 30px;
-          opacity: 1;
-        }
-      }
-
-      @-webkit-keyframes fadeout {
-        from {
-          bottom: 30px;
-          opacity: 1;
-        }
-
-        to {
-          bottom: 0;
-          opacity: 0;
-        }
-      }
-
-      @keyframes fadeout {
-        from {
-          bottom: 30px;
-          opacity: 1;
-        }
-
-        to {
-          bottom: 0;
-          opacity: 0;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    
+  <header>
+    <nav style="background-color: palevioletred; margin:0; padding: 20px; color: whitesmoke;">
+      <!-- Your navigation menu goes here --><div>
+      <div class="tab" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+          <h2 style="margin-right: 75px;">aemegi.github.io</h2>
+       
+        <button class="tablinks" onclick="openTab(event, 'all')">All</button>
+        <button class="tablinks" onclick="openTab(event, 'wordpress')">Wordpress</button>
+        <button class="tablinks" onclick="openTab(event, 'html')">HTML</button>
+        <button class="tablinks" onclick="openTab(event, 'css')">CSS</button>
+        <button class="tablinks" onclick="openTab(event, 'javascript')">JavaScript</button>
+        <button class="tablinks" onclick="openTab(event, 'php')">php</button>
+        <button class="tablinks" onclick="openTab(event, 'mysql')">MySQL</button>
+        <button class="tablinks" onclick="openTab(event, 'MERN')">MERN</button>
+      </div> </div>
+      
+    </nav>
+  </header>
     <main>
-      <header>
-        <div>
-          <h2 style="background-color: palevioletred; margin:0; padding: 20px; color: whitesmoke;">aemegi.github.io</h2>
-        </div>
-      </header>
       <div class="portfolio">
-        <div class="container tomatolovecarrot">
+        <div class="container tomatolovecarrot tabcontent php mysql">
           <div class="overlay">
             <div class="items"></div>
             <div class="items head">
@@ -362,7 +66,7 @@
             </div>
           </div>
         </div>
-        <div class="container periodictable">
+        <div class="container periodictable tabcontent html css">
           <div class="overlay">
             <div class="items"></div>
             <div class="items head">
@@ -390,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="container tarotcards">
+        <div class="container tarotcards tabcontent html javascript">
           <div class="overlay">
             <div class="items"></div>
             <div class="items head">
@@ -418,7 +122,7 @@
             </div>
           </div>
         </div>
-        <div class="container imgmapofspecies">
+        <div class="container imgmapofspecies tabcontent html">
           <div class="overlay">
             <div class="items"></div>
             <div class="items head">
@@ -446,7 +150,7 @@
             </div>
           </div>
         </div>
-        <div class="container color-crayons">
+        <div class="container color-crayons tabcontent html css javascript">
           <div class="overlay">
             <div class="items"></div>
             <div class="items head">
@@ -474,7 +178,7 @@
             </div>
           </div>
         </div>
-        <div class="container bookkeeper">
+        <div class="container bookkeeper tabcontent html css">
           <div class="overlay">
             <div class="items"></div>
             <div class="items head">
@@ -502,7 +206,7 @@
             </div>
           </div>
         </div>
-        <div class="container noahsark">
+        <div class="container noahsark tabcontent css">
           <div class="overlay">
             <div class="items"></div>
             <div class="items head">
@@ -530,7 +234,7 @@
             </div>
           </div>
         </div>
-        <div class="container runes">
+        <div class="container runes tabcontent MERN">
           <div class="overlay">
             <div class="items"></div>
             <div class="items head">
@@ -558,7 +262,7 @@
             </div>
           </div>
         </div>
-        <div class="container folktale">
+        <div class="container folktale tabcontent wordpress">
           <div class="overlay">
             <div class="items"></div>
             <div class="items head">
@@ -580,7 +284,7 @@
             </div>
           </div>
         </div>
-        <div class="container neonnomad">
+        <div class="container neonnomad tabcontent wordpress">
           <div class="overlay">
             <div class="items"></div>
             <div class="items head">
@@ -602,7 +306,7 @@
             </div>
           </div>
         </div>
-        <div class="container formflow">
+        <div class="container formflow tabcontent php">
           <div class="overlay">
             <div class="items"></div>
             <div class="items head">
@@ -621,7 +325,7 @@
             </div>
           </div>
         </div>
-        <div class="container madlibs">
+        <div class="container madlibs tabcontent php mysql">
           <div class="overlay">
             <div class="items"></div>
             <div class="items head">
@@ -689,5 +393,7 @@
         myFunction();
       };
     </script>
+    
+  <script src="scripts.js"></script>
   </body>
 </html>
