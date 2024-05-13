@@ -1,398 +1,438 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8FMF9079D3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-8FMF9079D3');
-    </script>
+<head>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8FMF9079D3"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+  
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-8FMF9079D3');
+      </script>
+      
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    
-  <header>
-    <nav style="background-color: palevioletred; margin:0; padding: 20px; color: whitesmoke;">
-      <!-- Your navigation menu goes here --><div>
-      <div class="tab" style="display: flex; flex-direction: row; flex-wrap: wrap;">
-          <h2 style="margin-right: 75px;">aemegi.github.io</h2>
-       
-        <button class="tablinks" onclick="openTab(event, 'all')">All</button>
-        <button class="tablinks" onclick="openTab(event, 'wordpress')">Wordpress</button>
-        <button class="tablinks" onclick="openTab(event, 'html')">HTML</button>
-        <button class="tablinks" onclick="openTab(event, 'css')">CSS</button>
-        <button class="tablinks" onclick="openTab(event, 'javascript')">JavaScript</button>
-        <button class="tablinks" onclick="openTab(event, 'php')">php</button>
-        <button class="tablinks" onclick="openTab(event, 'mysql')">MySQL</button>
-        <button class="tablinks" onclick="openTab(event, 'MERN')">MERN</button>
-      </div> </div>
-      
-    </nav>
-  </header>
-    <main>
-      <div class="portfolio">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      display: flex;
+    }
+
+    #desktop {
+      position: absolute;
+      padding-top: 0;
+      height: 100vh;
+      padding-left: 20px;
+      background-color: #333;
+      color: whitesmoke;
+    }
+    #mobile {
+      position: fixed;
+      width: 100vw;
+      z-index: 10;
+    }
+
+    .animated-element {
+      position: absolute;
+      top: 0;
+      right: -100%;
+      background-color: #f0f0f0;
+      animation-name: slideIn;
+      animation-duration: 1s;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes slideIn {
+      0% { right: -100%; }
+      100% { right: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+          
+<!-- Top Navigation Menu -->
+<nav>
+        <div id="desktop">
+            <!-- Your navigation menu goes here --><div>
+                <h2 style="margin-right: 75px;">aemegi.github.io</h2>
+             
+            <div class="tab">
+              <button class="tablinks" onclick="openTab(event, 'all')">All</button>
+              <button class="tablinks" onclick="openTab(event, 'wordpress')">Wordpress</button>
+              <button class="tablinks" onclick="openTab(event, 'html')">HTML</button>
+              <button class="tablinks" onclick="openTab(event, 'css')">CSS</button>
+              <button class="tablinks" onclick="openTab(event, 'javascript')">JavaScript</button>
+              <button class="tablinks" onclick="openTab(event, 'php')">php</button>
+              <button class="tablinks" onclick="openTab(event, 'mysql')">MySQL</button>
+              <button class="tablinks" onclick="openTab(event, 'MERN')">MERN</button>
+              <hr hidden />
+              <button style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'about')">about</button>
+            </div> </div>
+            
+ 
+          </div>
+
+                
+        <div id="mobile">
+          <div class="topnav">
+            <a href="#home" class="active">aemegi.github.io</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks" class="tab">
+                <button class="tablinks" onclick="openTab(event, 'all')">All</button>
+                <button class="tablinks" onclick="openTab(event, 'wordpress')">Wordpress</button>
+                <button class="tablinks" onclick="openTab(event, 'html')">HTML</button>
+                <button class="tablinks" onclick="openTab(event, 'css')">CSS</button>
+                <button class="tablinks" onclick="openTab(event, 'javascript')">JavaScript</button>
+                <button class="tablinks" onclick="openTab(event, 'php')">php</button>
+                <button class="tablinks" onclick="openTab(event, 'mysql')">MySQL</button>
+                <button class="tablinks" onclick="openTab(event, 'MERN')">MERN</button>
+                <hr hidden />
+                <button style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'about')">about</button>
+           
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div></div>
+          </nav>
+    <div class="content portfolio tab-container">
         <section class="container tomatolovecarrot tabcontent php mysql">
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head">
-              <p>
-                <a href="https://companions.phpcupcake.shop/">tomatolovecarrot</a>
-              </p>
-              <hr>
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>
+                  <a href="https://companions.phpcupcake.shop/">tomatolovecarrot</a>
+                </p>
+                <hr>
+              </div>
+              <div class="items price">
+                <p class="new">
+                  <a href="https://companions.phpcupcake.shop/index.php?startsession=edit">try out edit mode.</a>
+                </p>
+              </div>
+              <div class="items cart">
+                <span>
+                  <a href="https://companions.phpcupcake.shop/">view site</a>
+                </span>
+                <span>
+                 <!-- <a href="https://codecreatedotsite.wordpress.com/tomatolovecarrot/">more info</a> -->
+                </span>
+                <span>
+                  <a href="https://github.com/aemegi/tomatolovecarrot/blob/main/index.php">source code</a>
+                </span>
+                <span>
+                  <a href="https://github.com/aemegi/tomatolovecarrot/archive/refs/heads/main.zip">download</a>
+                </span>
+              </div>
             </div>
-            <div class="items price">
-              <p class="new">
-                <a href="https://companions.phpcupcake.shop/index.php?startsession=edit">try out edit mode.</a>
-              </p>
+          </section>
+          <section class="container periodictable tabcontent html css">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>
+                  <a href="https://aemegi.github.io/periodic-table/">periodic table of the elements</a>
+                </p>
+                <hr>
+              </div>
+              <div class="items price">
+                <p class="new">resize the screen.</p>
+              </div>
+              <div class="items cart">
+                <span>
+                  <a href="https://aemegi.github.io/periodic-table/">view site</a>
+                </span>
+                <span>
+                  <a href="https://codecreatedotsite.wordpress.com/periodic-table-of-elements/">more info</a>
+                </span>
+                <span>
+                  <a href="https://github.com/aemegi/periodic-table">source code</a>
+                </span>
+                <span>
+                  <a href="https://github.com/aemegi/periodic-table/archive/refs/heads/main.zip">download</a>
+                </span>
+              </div>
             </div>
-            <div class="items cart">
-              <span>
-                <a href="https://companions.phpcupcake.shop/">view site</a>
-              </span>
-              <span>
-               <!-- <a href="https://codecreatedotsite.wordpress.com/tomatolovecarrot/">more info</a> -->
-              </span>
-              <span>
-                <a href="https://github.com/aemegi/tomatolovecarrot/blob/main/index.php">source code</a>
-              </span>
-              <span>
-                <a href="https://github.com/aemegi/tomatolovecarrot/archive/refs/heads/main.zip">download</a>
-              </span>
+          </section>
+          <section class="container tarotcards tabcontent html javascript">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>
+                  <a href="https://aemegi.github.io/tarotcards/">the pictorial key to the tarot</a>
+                </p>
+                <hr>
+              </div>
+              <div class="items price">
+                <p class="new">search the page.</p>
+              </div>
+              <div class="items cart">
+                <span>
+                  <a href="https://aemegi.github.io/tarotcards/">view site</a>
+                </span>
+                <span>
+                  <!--<a href="https://codecreatedotsite.wordpress.com/cardcast/">more info</a>-->
+                </span>
+                <span>
+                  <a href="https://github.com/aemegi/tarotcards">source code</a>
+                </span>
+                <span>
+                  <a href="https://github.com/aemegi/tarotcards/archive/refs/heads/main.zip">download</a>
+                </span>
+              </div>
             </div>
-          </div>
-        </section>
-        <section class="container periodictable tabcontent html css">
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head">
-              <p>
-                <a href="https://aemegi.github.io/periodic-table/">periodic table of the elements</a>
-              </p>
-              <hr>
+          </section>
+          <section class="container imgmapofspecies tabcontent html">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>
+                  <a href="https://aemegi.github.io/animagemapofspecies/">An Image Map of Species</a>
+                </p>
+                <hr>
+              </div>
+              <div class="items price">
+                <p class="new">click on a hominid.</p>
+              </div>
+              <div class="items cart">
+                <span>
+                  <a href="https://aemegi.github.io/animagemapofspecies/">view site</a>
+                </span>
+                <span>
+                  <!-- <a href="https://codecreatedotsite.wordpress.com/animagemapofspecies/">more info</a> -->
+                </span>
+                <span>
+                  <a href="https://github.com/aemegi/animagemapofspecies/tree/main">source code</a>
+                </span>
+                <span>
+                  <a href="https://github.com/aemegi/animagemapofspecies/archive/refs/heads/main.zip">download</a>
+                </span>
+              </div>
             </div>
-            <div class="items price">
-              <p class="new">resize the screen.</p>
+          </section>
+          <section class="container color-crayons tabcontent html css javascript">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>
+                  <a href="https://aemegi.github.io/color-crayons/">html color crayons</a>
+                </p>
+                <hr>
+              </div>
+              <div class="items price">
+                <p class="new">make a mess.</p>
+              </div>
+              <div class="items cart">
+                <span>
+                  <a href="https://aemegi.github.io/color-crayons/">view site</a>
+                </span>
+                <span>
+                  <a href="https://codecreatedotsite.wordpress.com/color-crayons/">more info</a>
+                </span>
+                <span>
+                  <a href="https://github.com/aemegi/color-crayons">source code</a>
+                </span>
+                <span>
+                  <a href="https://github.com/aemegi/color-crayons/archive/refs/heads/main.zip">download</a>
+                </span>
+              </div>
             </div>
-            <div class="items cart">
-              <span>
-                <a href="https://aemegi.github.io/periodic-table/">view site</a>
-              </span>
-              <span>
-                <a href="https://codecreatedotsite.wordpress.com/periodic-table-of-elements/">more info</a>
-              </span>
-              <span>
-                <a href="https://github.com/aemegi/periodic-table">source code</a>
-              </span>
-              <span>
-                <a href="https://github.com/aemegi/periodic-table/archive/refs/heads/main.zip">download</a>
-              </span>
+          </section>
+          <section class="container bookkeeper tabcontent html css">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>
+                  <a href="https://aemegi.github.io/mary-wallace-bookkeeper-css-template/">simple landing page</a>
+                </p>
+                <hr>
+              </div>
+              <div class="items price">
+                <p class="new">enjoy simplicity.</p>
+              </div>
+              <div class="items cart">
+                <span>
+                  <a href="https://aemegi.github.io/mary-wallace-bookkeeper-css-template/">view site</a>
+                </span>
+                <span>
+                  <!-- <a href="https://codecreatedotsite.wordpress.com/mary-wallace-10-website/">more info</a>-->
+                </span>
+                <span>
+                  <a href="https://github.com/aemegi/mary-wallace-bookkeeper-css-template">source code</a>
+                </span>
+                <span>
+                  <a href="https://github.com/aemegi/mary-wallace-bookkeeper-css-template/archive/refs/heads/main.zip">download</a>
+                </span>
+              </div>
             </div>
-          </div>
-        </section>
-        <section class="container tarotcards tabcontent html javascript">
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head">
-              <p>
-                <a href="https://aemegi.github.io/tarotcards/">the pictorial key to the tarot</a>
-              </p>
-              <hr>
+          </section>
+          <section class="container noahsark tabcontent css">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>
+                  <a href="https://aemegi.github.io/noahs-ark/">Noah's Ark</a>
+                </p>
+                <hr>
+              </div>
+              <div class="items price">
+                <p class="new">watch a simple animation.</p>
+              </div>
+              <div class="items cart">
+                <span>
+                  <a href="https://aemegi.github.io/noahs-ark/">view site</a>
+                </span>
+                <span>
+                  <!-- <a href="https://codecreatedotsite.wordpress.com/noahs-ark/">more info</a> -->
+                </span>
+                <span>
+                  <a href="https://github.com/aemegi/noahs-ark">source code</a>
+                </span>
+                <span>
+                  <a href="https://github.com/aemegi/noahs-ark/archive/refs/heads/main.zip">download</a>
+                </span>
+              </div>
             </div>
-            <div class="items price">
-              <p class="new">search the page.</p>
+          </section>
+          <section class="container runes tabcontent MERN">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>
+                  <a href="https://runes-frontend.fly.dev/reading">rune cast</a>
+                </p>
+                <hr>
+              </div>
+              <div class="items price">
+                <p class="new">play with api.</p>
+              </div>
+              <div class="items cart">
+                <span>
+                  <a href="https://runes-frontend.fly.dev/reading">view site</a>
+                </span>
+                <span>
+                   <a href="https://codecreatedotsite.wordpress.com/runes-api/">more info</a> 
+                </span>
+                <span>
+                <!--  <a href="#">source code</a>-->
+                </span>
+                <span>
+                 <!-- <a href="#">download</a>-->
+                </span>
+              </div>
             </div>
-            <div class="items cart">
-              <span>
-                <a href="https://aemegi.github.io/tarotcards/">view site</a>
-              </span>
-              <span>
-                <!--<a href="https://codecreatedotsite.wordpress.com/cardcast/">more info</a>-->
-              </span>
-              <span>
-                <a href="https://github.com/aemegi/tarotcards">source code</a>
-              </span>
-              <span>
-                <a href="https://github.com/aemegi/tarotcards/archive/refs/heads/main.zip">download</a>
-              </span>
+          </section>
+          <section class="container folktale tabcontent wordpress">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>
+                  <a href="https://talesandfolk.com/">folktale</a>
+                </p>
+                <hr>
+              </div>
+              <div class="items price">
+                <p class="new">purchase that timeless look.</p>
+              </div>
+              <div class="items cart">
+                <span>
+                  <a href="https://talesandfolk.com/">view site</a>
+                </span>
+                <span>
+                  <!--<a href="https://codecreatedotsite.wordpress.com/folktale/">more info</a>-->
+                </span>
+              </div>
             </div>
-          </div>
-        </section>
-        <section class="container imgmapofspecies tabcontent html">
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head">
-              <p>
-                <a href="https://aemegi.github.io/animagemapofspecies/">An Image Map of Species</a>
-              </p>
-              <hr>
+          </section>
+          <section class="container neonnomad tabcontent wordpress">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>
+                  <a href="https://neonnomad.shop/">neon nomad</a>
+                </p>
+                <hr>
+              </div>
+              <div class="items price">
+                <p class="new">light your journey.</p>
+              </div>
+              <div class="items cart">
+                <span>
+                  <a href="https://neonnomad.shop/">view site</a>
+                </span>
+                <span>
+                  <!-- <a href="https://codecreatedotsite.wordpress.com/neon-nomad/">more info</a> -->
+                </span>
+              </div>
             </div>
-            <div class="items price">
-              <p class="new">click on a hominid.</p>
+          </section>
+          <section class="container formflow tabcontent php">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>
+                  <a href="https://formflow.phpcupcake.shop/">formflow</a> 
+                </p>
+                <hr>
+              </div>
+              <div class="items price">
+                <p class="new">handle a form.</p>
+              </div>
+              <div class="items cart">
+                <span>
+                  <a href="https://formflow.phpcupcake.shop/">view site</a>
+                </span>
+              </div>
             </div>
-            <div class="items cart">
-              <span>
-                <a href="https://aemegi.github.io/animagemapofspecies/">view site</a>
-              </span>
-              <span>
-                <!-- <a href="https://codecreatedotsite.wordpress.com/animagemapofspecies/">more info</a> -->
-              </span>
-              <span>
-                <a href="https://github.com/aemegi/animagemapofspecies/tree/main">source code</a>
-              </span>
-              <span>
-                <a href="https://github.com/aemegi/animagemapofspecies/archive/refs/heads/main.zip">download</a>
-              </span>
+          </section>
+          <section class="container madlibs tabcontent php mysql">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>
+                  <a href="https://madlibs.codecreate.site">madlibs</a>
+                </p>
+                <hr>
+              </div>
+              <div class="items price">
+                <p class="new">create a story.</p>
+              </div>
+              <div class="items cart">
+                <span>
+                  <a href="https://madlibs.codecreate.site">view site</a>
+                </span>
+              </div>
             </div>
-          </div>
-        </section>
-        <section class="container color-crayons tabcontent html css javascript">
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head">
-              <p>
-                <a href="https://aemegi.github.io/color-crayons/">html color crayons</a>
-              </p>
-              <hr>
-            </div>
-            <div class="items price">
-              <p class="new">make a mess.</p>
-            </div>
-            <div class="items cart">
-              <span>
-                <a href="https://aemegi.github.io/color-crayons/">view site</a>
-              </span>
-              <span>
-                <a href="https://codecreatedotsite.wordpress.com/color-crayons/">more info</a>
-              </span>
-              <span>
-                <a href="https://github.com/aemegi/color-crayons">source code</a>
-              </span>
-              <span>
-                <a href="https://github.com/aemegi/color-crayons/archive/refs/heads/main.zip">download</a>
-              </span>
-            </div>
-          </div>
-        </section>
-        <section class="container bookkeeper tabcontent html css">
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head">
-              <p>
-                <a href="https://aemegi.github.io/mary-wallace-bookkeeper-css-template/">simple landing page</a>
-              </p>
-              <hr>
-            </div>
-            <div class="items price">
-              <p class="new">enjoy simplicity.</p>
-            </div>
-            <div class="items cart">
-              <span>
-                <a href="https://aemegi.github.io/mary-wallace-bookkeeper-css-template/">view site</a>
-              </span>
-              <span>
-                <!-- <a href="https://codecreatedotsite.wordpress.com/mary-wallace-10-website/">more info</a>-->
-              </span>
-              <span>
-                <a href="https://github.com/aemegi/mary-wallace-bookkeeper-css-template">source code</a>
-              </span>
-              <span>
-                <a href="https://github.com/aemegi/mary-wallace-bookkeeper-css-template/archive/refs/heads/main.zip">download</a>
-              </span>
-            </div>
-          </div>
-        </section>
-        <section class="container noahsark tabcontent css">
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head">
-              <p>
-                <a href="https://aemegi.github.io/noahs-ark/">Noah's Ark</a>
-              </p>
-              <hr>
-            </div>
-            <div class="items price">
-              <p class="new">watch a simple animation.</p>
-            </div>
-            <div class="items cart">
-              <span>
-                <a href="https://aemegi.github.io/noahs-ark/">view site</a>
-              </span>
-              <span>
-                <!-- <a href="https://codecreatedotsite.wordpress.com/noahs-ark/">more info</a> -->
-              </span>
-              <span>
-                <a href="https://github.com/aemegi/noahs-ark">source code</a>
-              </span>
-              <span>
-                <a href="https://github.com/aemegi/noahs-ark/archive/refs/heads/main.zip">download</a>
-              </span>
-            </div>
-          </div>
-        </section>
-        <section class="container runes tabcontent MERN">
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head">
-              <p>
-                <a href="https://runes-frontend.fly.dev/reading">rune cast</a>
-              </p>
-              <hr>
-            </div>
-            <div class="items price">
-              <p class="new">play with api.</p>
-            </div>
-            <div class="items cart">
-              <span>
-                <a href="https://runes-frontend.fly.dev/reading">view site</a>
-              </span>
-              <span>
-                 <a href="https://codecreatedotsite.wordpress.com/runes-api/">more info</a> 
-              </span>
-              <span>
-              <!--  <a href="#">source code</a>-->
-              </span>
-              <span>
-               <!-- <a href="#">download</a>-->
-              </span>
-            </div>
-          </div>
-        </section>
-        <section class="container folktale tabcontent wordpress">
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head">
-              <p>
-                <a href="https://talesandfolk.com/">folktale</a>
-              </p>
-              <hr>
-            </div>
-            <div class="items price">
-              <p class="new">purchase that timeless look.</p>
-            </div>
-            <div class="items cart">
-              <span>
-                <a href="https://talesandfolk.com/">view site</a>
-              </span>
-              <span>
-                <!--<a href="https://codecreatedotsite.wordpress.com/folktale/">more info</a>-->
-              </span>
-            </div>
-          </div>
-        </section>
-        <section class="container neonnomad tabcontent wordpress">
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head">
-              <p>
-                <a href="https://neonnomad.shop/">neon nomad</a>
-              </p>
-              <hr>
-            </div>
-            <div class="items price">
-              <p class="new">light your journey.</p>
-            </div>
-            <div class="items cart">
-              <span>
-                <a href="https://neonnomad.shop/">view site</a>
-              </span>
-              <span>
-                <!-- <a href="https://codecreatedotsite.wordpress.com/neon-nomad/">more info</a> -->
-              </span>
-            </div>
-          </div>
-        </section>
-        <section class="container formflow tabcontent php">
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head">
-              <p>
-                <a href="https://formflow.phpcupcake.shop/">formflow</a> 
-              </p>
-              <hr>
-            </div>
-            <div class="items price">
-              <p class="new">handle a form.</p>
-            </div>
-            <div class="items cart">
-              <span>
-                <a href="https://formflow.phpcupcake.shop/">view site</a>
-              </span>
-            </div>
-          </div>
-        </section>
-        <section class="container madlibs tabcontent php mysql">
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head">
-              <p>
-                <a href="https://madlibs.codecreate.site">madlibs</a>
-              </p>
-              <hr>
-            </div>
-            <div class="items price">
-              <p class="new">create a story.</p>
-            </div>
-            <div class="items cart">
-              <span>
-                <a href="https://madlibs.codecreate.site">view site</a>
-              </span>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <div class="footerparent">
-        <div class="footerchild1">
-          <img src="profilepic.jpg" alt="Avatar" class="avatar">
-        </div>
-        <div class="footerchild2">
-          <a href="https://www.linkedin.com/in/andreacrofoot/" class="fa fa-linkedin" style="font-size: 32px; padding: 8px;"></a>
-          <a href="https://github.com/aemegi/" class="fa fa-github" style="font-size: 32px; padding: 8px;"></a>
-          <a href="mailto:aemegi@icloud.com" class="fa fa-envelope" style="font-size: 32px; padding: 8px;"></a>
-          <p>
-            <!--In Leiu of a resume for now:--> Hello World, I am Andrea. I have been learning coding, programming, and operating systems off and on again since the age of 9 or 10. Along the way I have developed self-taught skills in HTML, CSS, JavaScript, SQL, XML, JSON. No longer am I only self taught as I am in my sophomore year of earning a Bachelor's of Science in Computer Science.
-          </p>
-          <p>All source code available free for personal or educational use.</p>
-          <a href="https://www.buymeacoffee.com/aemegi">Buy Me a Coffee.</a>
-          <p class="float-end">
-            <a href="#">Back to top</a>
-          </p>
-        </div>
-        <div class="footerchild3">
-          <h3>Useful (external) Links:</h3>
-          <ul>
-            <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
-            <li><a href="https://www.w3schools.com/">W3 schools</a></li>
-            <li><a href="https://stackoverflow.com/">StackOverflow</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/">Mozilla MDN</a></li>
-            <li><a href="https://www.php.net/">php.net</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <div id="snackbar">Portfolio under construction. Please check back in 3-6 months.</div>
-    <script>
-      function myFunction() {
-        // Get the snackbar DIV
-        var x = document.getElementById("snackbar");
-        // Add the "show" class to DIV
-        x.className = "show";
-        // After 3 seconds, remove the show class from DIV
-        setTimeout(function() {
-          x.className = x.className.replace("show", "");
-        }, 9000);
-      }
-      window.onload = function() {
-        myFunction();
-      };
-    </script>
-    
+          </section>
+    </div>
+          <section id="about" class="about hidden">
+            <div class="aboutparent">
+              <div class="aboutchild1">
+                <img src="profilepic.jpg" alt="Avatar" class="avatar">
+              </div>
+              <div class="aboutchild2">
+                <a href="https://www.linkedin.com/in/andreacrofoot/" class="fa fa-linkedin" style="font-size: 32px; padding: 8px;"></a>
+                <a href="https://github.com/aemegi/" class="fa fa-github" style="font-size: 32px; padding: 8px;"></a>
+                <a href="mailto:aemegi@icloud.com" class="fa fa-envelope" style="font-size: 32px; padding: 8px;"></a>
+                <p>
+                  <!--In Leiu of a resume for now:--> Hello World, I am Andrea. I have been learning coding, programming, and operating systems off and on again since the age of 9 or 10. Along the way I have developed self-taught skills in HTML, CSS, JavaScript, PHP, SQL, XML, JSON. No longer am I only self taught as I am in my sophomore year of earning a Bachelor's of Science in Computer Science.
+                </p>
+                <p>All source code available free for personal or educational use.</p>
+                <a href="https://www.buymeacoffee.com/aemegi">Buy Me a Coffee.</a>
+      
+              </div>
+            </section>
+  </main>
   <script src="scripts.js"></script>
-  </body>
+</body>
 </html>
