@@ -299,62 +299,6 @@
       color: white;
     } 
     
-  .tab {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: start;
-    margin-bottom: 10px;
-  }
-
-  .tab button {
-    background-color: transparent;
-    color: darkseagreen;
-    border: none;
-    padding: 0 20px;
-    margin: 0 5px;
-    cursor: pointer;
-    font-size: larger;
-  }
-
-  .tab button:hover {
-    color:#fff;
-  }
-
-  .tab button.active {
-    color: #fff;
-  }
-
-  
-  .tabcontent {
-   /* display: none; */
-  }
-
-  .tab {
-    overflow: hidden;
-    display: flex;
-    justify-content: left;
-    margin-bottom: 10px; 
-    flex-direction: column;
-  }
-
-  .tab button {
-    background-color: transparent;
-    color: darkseagreen;
-    border: none;
-    padding: 0 20px;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-
-  .tab button:hover {
-    color:#fff;
-  }
-
-  .tab button.active {
-    color: #fff;
-  }
   }
 
   
