@@ -90,30 +90,6 @@
     background: url('img/madlibs.png');
   }
 
-  .container {
-    width: 400px;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-color: black;
-    background-size: contain;
-    background-position: center;
-    -webkit-box-shadow: 0 0 5px #000;
-    box-shadow: 0 0 5px #000;
-    margin: 50px;
-  }
-
-  .overlay {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 2fr 1fr;
-    background: rgba(77, 77, 77, .9);
-    color: darkseagreen;
-    opacity: 0;
-    transition: all 0.5s;
-    font-family: 'Playfair Display', serif;
-  }
 
   .items {
     padding-left: 20px;
@@ -211,6 +187,32 @@
     #mobile {
       position: fixed;
     }
+    .container {
+      width: 80vw;
+      height: 40vh;
+      background-repeat: no-repeat;
+      background-color: black;
+      background-size: contain;
+      background-position: center;
+      -webkit-box-shadow: 0 0 5px #000;
+      box-shadow: 0 0 5px #000;
+      margin: 50px;
+    }
+  
+    .overlay {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr 2fr 1fr;
+      background: rgba(77, 77, 77, .9);
+      color: darkseagreen;
+      opacity: 0;
+      transition: all 0.5s;
+      font-family: 'Playfair Display', serif;
+    }
+  
+
     .content {
       overflow: scroll;
       position: relative;
@@ -304,7 +306,6 @@
     justify-content: left;
     align-items: start;
     margin-bottom: 10px;
-    font-size: 17px;
   }
 
   .tab button {
@@ -314,6 +315,7 @@
     padding: 0 20px;
     margin: 0 5px;
     cursor: pointer;
+    font-size: larger;
   }
 
   .tab button:hover {
@@ -364,7 +366,31 @@
     #mobile {
       display: none;
     }
-    
+    .container {
+      width: 400px;
+      height: 300px;
+      background-repeat: no-repeat;
+      background-color: black;
+      background-size: contain;
+      background-position: center;
+      -webkit-box-shadow: 0 0 5px #000;
+      box-shadow: 0 0 5px #000;
+      margin: 50px;
+    }
+  
+    .overlay {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr 2fr 1fr;
+      background: rgba(77, 77, 77, .9);
+      color: darkseagreen;
+      opacity: 0;
+      transition: all 0.5s;
+      font-family: 'Playfair Display', serif;
+    }
+  
     .portfolio {
       display: flex;
       flex-wrap: wrap;
