@@ -241,6 +241,7 @@
       background-color: whitesmoke;
       text-align: center;
       position: relative;
+      vertical-align: middle;
       left: 5%;
       top: 50%;
       bottom: 20%;
