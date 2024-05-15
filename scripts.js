@@ -5,6 +5,8 @@ function openTab(evt, tabName) {
   
   if (tabName != 'about') {
     document.getElementById('about').style.display = "none";
+  } else {
+    document.getElementById('about').style.display = "flex";
   }
 
   tabcontent = document.getElementsByClassName("tabcontent");

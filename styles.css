@@ -239,29 +239,23 @@
   
     #about {
       background-color: whitesmoke;
-      text-align: center;
       position: absolute;
-      vertical-align: middle;
-      left: 5%;
-      top: 50%;
-      bottom: 20%;
-      max-width: 90%;
+      width: 90%;
+      height: 90%;
     }
   
     .aboutparent {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-    }
-  
-    .aboutchild1 {
-      position: relative;
+      position: absolute;
+      margin-top: 30%;
       justify-content: center;
+      text-align: center;
     }
   
-    .aboutchild2 {
+    .aboutchild1 .aboutchild2 {
       position: relative;
     }
+  
+
   
     /* For mobile phones: */
      /* Style the navigation menu */
