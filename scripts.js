@@ -8,6 +8,12 @@ function openTab(evt, tabName) {
   } else {
     document.getElementById('about').style.display = "flex";
   }
+ 
+  if (tabName != 'hireme') {
+    document.getElementById('hireme').style.display = "none";
+  } else {
+    document.getElementById('hireme').style.display = "flex";
+  }
 
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
