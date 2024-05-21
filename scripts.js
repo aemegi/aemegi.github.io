@@ -2,25 +2,13 @@
 
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
-  
-  if (tabName != 'about') {
-    document.getElementById('about').style.display = "none";
-  } else {
-    document.getElementById('about').style.display = "flex";
-  }
- 
-  if (tabName != 'hireme') {
-    document.getElementById('hireme').style.display = "none";
-  } else {
-    document.getElementById('hireme').style.display = "flex";
-  }
- 
-  if (tabName != 'hourly') {
-    document.getElementById('phphourly').style.display = "none";
-  } else {
-    document.getElementById('phphourly').style.display = "flex";
-  }
+// Get all the tab elements
+const tabs = document.querySelectorAll('.hidden');
 
+// Loop through the tabs and toggle their visibility
+tabs.forEach(tab => {
+  tab.style.display = tabName === tab.id ? "flex" : "none";
+});
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
