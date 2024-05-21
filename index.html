@@ -76,10 +76,11 @@
               <button class="tablinks" onclick="openTab(event, 'MERN')">MERN</button>
               <hr hidden />
               <button style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'about')">about</button>
-              <button style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hireme')">hire me</button>
               <hr hidden />
+              <button style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hourly')">hire me</button>
               <!--<button style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'learning')">tutorials and learning</button>-->
-            </div> </div>
+            </div> 
+          </div>
             
  
           </div>
@@ -100,7 +101,7 @@
                 <a class="tablinks" onclick="openTab(event, 'MERN')">MERN</a>
                 <hr hidden />
                 <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'about')">about</a>
-                <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hireme')">hire me</a>
+                <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hourly')">hire me</a>
            
                 <hr hidden />
                 <!--<a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'learning')">tutorials and learning</a>-->
@@ -110,10 +111,11 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
-          </div></div>
+          </div>
+        </div>
           </nav>
     <div class="content portfolio tab-container">
-        <section class="container tomatolovecarrot tabcontent php mysql">
+        <section id="tomatolovecarrot" class="container tomatolovecarrot tabcontent php mysql">
             <div class="overlay">
               <div class="items"></div>
               <div class="items head">
@@ -143,7 +145,7 @@
               </div>
             </div>
           </section>
-          <section class="container periodictable tabcontent html css">
+          <section id="periodictable" class="container periodictable tabcontent html css">
             <div class="overlay">
               <div class="items"></div>
               <div class="items head">
@@ -171,7 +173,7 @@
               </div>
             </div>
           </section>
-          <section class="container tarotcards tabcontent html javascript">
+          <section id="tarotcards" class="container tarotcards tabcontent html javascript">
             <div class="overlay">
               <div class="items"></div>
               <div class="items head">
@@ -199,7 +201,7 @@
               </div>
             </div>
           </section>
-          <section class="container imgmapofspecies tabcontent html">
+          <section id="imgmapofspecies" class="container imgmapofspecies tabcontent html">
             <div class="overlay">
               <div class="items"></div>
               <div class="items head">
@@ -227,7 +229,7 @@
               </div>
             </div>
           </section>
-          <section class="container color-crayons tabcontent html css javascript">
+          <section id="color-crayons" class="container color-crayons tabcontent html css javascript">
             <div class="overlay">
               <div class="items"></div>
               <div class="items head">
@@ -255,7 +257,7 @@
               </div>
             </div>
           </section>
-          <section class="container bookkeeper tabcontent html css">
+          <section id="bookkeeper" class="container bookkeeper tabcontent html css">
             <div class="overlay">
               <div class="items"></div>
               <div class="items head">
@@ -283,7 +285,7 @@
               </div>
             </div>
           </section>
-          <section class="container noahsark tabcontent css">
+          <section id="noahsark" class="container noahsark tabcontent css">
             <div class="overlay">
               <div class="items"></div>
               <div class="items head">
@@ -311,7 +313,7 @@
               </div>
             </div>
           </section>
-          <section class="container runes tabcontent MERN">
+          <section id="runes" class="container runes tabcontent MERN">
             <div class="overlay">
               <div class="items"></div>
               <div class="items head">
@@ -339,7 +341,7 @@
               </div>
             </div>
           </section>
-          <section class="container folktale tabcontent wordpress">
+          <section id="folktale" class="container folktale tabcontent wordpress">
             <div class="overlay">
               <div class="items"></div>
               <div class="items head">
@@ -361,7 +363,7 @@
               </div>
             </div>
           </section>
-          <section class="container neonnomad tabcontent wordpress">
+          <section id="neonnomad" class="container neonnomad tabcontent wordpress">
             <div class="overlay">
               <div class="items"></div>
               <div class="items head">
@@ -383,7 +385,7 @@
               </div>
             </div>
           </section>
-          <section class="container formflow tabcontent php">
+          <section id="formflow" class="container formflow tabcontent php">
             <div class="overlay">
               <div class="items"></div>
               <div class="items head">
@@ -402,7 +404,7 @@
               </div>
             </div>
           </section>
-          <section class="container madlibs tabcontent php mysql">
+          <section id="madlibs" class="container madlibs tabcontent php mysql">
             <div class="overlay">
               <div class="items"></div>
               <div class="items head">
@@ -420,8 +422,81 @@
                 </span>
               </div>
             </div>
+          </section> 
+          <section id="phphourly" class="phphourly hourly hidden container tabcontent">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>php scripting.
+                </p>
+                <hr>
+              </div>
+              <div class="items price">$35/hour 
+              </div>
+              <div class="items cart">
+                <span>
+                  <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hireme')">hire me</a>
+                </span>
+              </div>
+            </div>
+            
           </section>
-    </div>
+          <section id="phppairhourly" class="phppairhourly hourly hidden container tabcontent">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>php scripting together.
+                </p>
+                <hr>
+              </div>
+              <div class="items price">$45/hour 
+              </div>
+              <div class="items cart">
+                <span>
+                  <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hireme')">hire me</a>
+                </span>
+              </div>
+            </div>
+            
+          </section>
+          <section id="consulthourly" class="consulthourly hourly hidden container tabcontent">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>php consultation.
+                </p>
+                <hr>
+              </div>
+              <div class="items price">$20/hour 
+              </div>
+              <div class="items cart">
+                <span>
+                  <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hireme')">hire me</a>
+                </span>
+              </div>
+            </div>
+            
+          </section>
+          <section id="htmlcsshourly" class="htmlcsshourly hourly hidden container tabcontent">
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>HTML CSS Coding.
+                </p>
+                <hr>
+              </div>
+              <div class="items price">$25/hour 
+              </div>
+              <div class="items cart">
+                <span>
+                  <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hireme')">hire me</a>
+                </span>
+              </div>
+            </div>
+            
+          </section>
+          </div>
+    
           <!--tutorials and learning
           <section class="container learning phpcupcakeshop hidden">
             <div class="overlay">
@@ -459,16 +534,13 @@
             Along the way I have developed self-taught skills in HTML, CSS, JavaScript, PHP, SQL, XML, JSON. 
             Now, I'm no longer solely self-taught as I'm currently in my sophomore year, pursuing a Bachelor's of Science degree in Computer Science.
           </p>
-          <p>All source code available free for personal or educational use.</p>
+          <p>All source code that is available is free for personal or educational use.</p>
           <a href="https://www.buymeacoffee.com/aemegi">Buy Me a Coffee.</a>
 
         </div>
       </section>
       <section id="hireme" class="hireme hidden">
         <div class="hiremeparent">
-          <div class="hiremechild1">
-          </div>
-          <div class="hiremechild2">
             <!--
     PeoplePerHour Profile Widget
     The div#pph-hire me is the element
@@ -477,6 +549,16 @@
     you need to display the widget
 -->
 <div id="pph-hireme"></div>
+<div class="hiremechild2">
+  <a href="https://www.linkedin.com/in/andreacrofoot/" class="fa fa-linkedin" style="font-size: 32px; padding: 8px;"></a>
+  <a href="https://github.com/aemegi/" class="fa fa-github" style="font-size: 32px; padding: 8px;"></a>
+  <a href="mailto:aemegi@icloud.com" class="fa fa-envelope" style="font-size: 32px; padding: 8px;"></a>
+  <p> For security, hiring can be done through peopleperhour, offering Escrow.
+  </p>
+  <p>All source code available free for personal or educational use.</p>
+  <a href="https://www.buymeacoffee.com/aemegi">Buy Me a Coffee.</a>
+
+</div>
 <script type="text/javascript">
 (function(d, s) {
     var useSSL = 'https:' == document.location.protocol;
@@ -487,8 +569,11 @@
 }(document, 'script'));
 </script>
   
-          </div>
-        </section>
+          
+</div>
+
+</section>
+
   </main>
   <script src="scripts.js"></script>
 </body>

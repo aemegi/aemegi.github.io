@@ -38,6 +38,10 @@
     width: 100%;
   }
 
+  .tablinks {
+    cursor: pointer;
+  }
+
   .tomatolovecarrot {
     background: url('img/tomatolovecarrot-img-1.png');
   }
@@ -92,6 +96,20 @@
 
   .phpcupcakeshop {
     background: url('img/phpcupcakeshop.png');
+  }
+
+  .phphourly {
+    background: url('img/phphourly.png');
+  }
+  .phppairhourly {
+    background: url('img/phppairhourly.png');
+  }
+
+  .htmlcsshourly {
+    background: url('img/HTMLCSShourly.png');
+  }
+  .consulthourly {
+    background: url('img/consulthourly.png');
   }
 
 
