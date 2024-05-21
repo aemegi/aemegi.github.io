@@ -111,6 +111,12 @@
   .consulthourly {
     background: url('img/consulthourly.png');
   }
+  .horoscope {
+    background: url('img/horoscope.png');
+  }
+  .complexityhourly {
+    background: url('img/complexity.png');
+  }
 
 
   .items {
