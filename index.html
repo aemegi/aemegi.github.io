@@ -53,6 +53,10 @@
       0% { right: -100%; }
       100% { right: 0; }
     }
+
+    a {
+      font-weight: bolder;
+    }
   </style>
 </head>
 <body>
@@ -76,7 +80,6 @@
               <hr hidden />
               <button style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'about')">about</button>
               <hr hidden />
-              <button style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hourly')">hire me</button>
               <!--<button style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'learning')">tutorials and learning</button>-->
             </div> 
           </div>
@@ -100,7 +103,6 @@
                 <a class="tablinks" onclick="openTab(event, 'MERN')">MERN</a>
                 <hr hidden />
                 <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'about')">about</a>
-                <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hourly')">hire me</a>
            
                 <hr hidden />
                 <!--<a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'learning')">tutorials and learning</a>-->
@@ -448,120 +450,7 @@
               </div>
             </div>
           </section> 
-          <section id="phphourly" class="phphourly hourly hidden container tabcontent">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>php scripting.
-                </p>
-                <hr>
-              </div>
-              <div class="items price">$35/hour 
-              </div>
-              <div class="items cart">
-                <span>
-                  <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hireme')">hire me</a>
-                </span>
-              </div>
-            </div>
-            
-          </section>
-          <section id="phppairhourly" class="phppairhourly hourly hidden container tabcontent">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>php scripting together.
-                </p>
-                <hr>
-              </div>
-              <div class="items price">$45/hour 
-              </div>
-              <div class="items cart">
-                <span>
-                  <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hireme')">hire me</a>
-                </span>
-              </div>
-            </div>
-            
-          </section>
-          <section id="consulthourly" class="consulthourly hourly hidden container tabcontent">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>php consultation.
-                </p>
-                <hr>
-              </div>
-              <div class="items price">$20/hour 
-              </div>
-              <div class="items cart">
-                <span>
-                  <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hireme')">hire me</a>
-                </span>
-              </div>
-            </div>
-            
-          </section>
-          <section id="htmlcsshourly" class="htmlcsshourly hourly hidden container tabcontent">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>HTML CSS Coding.
-                </p>
-                <hr>
-              </div>
-              <div class="items price">$25/hour 
-              </div>
-              <div class="items cart">
-                <span>
-                  <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hireme')">hire me</a>
-                </span>
-              </div>
-            </div>
-            
-          </section>
-          <section id="complexityhourly" class="complexityhourly hourly hidden container tabcontent">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>Reducing complexity.
-                </p>
-                <hr>
-              </div>
-              <div class="items price">$40/hour 
-              </div>
-              <div class="items cart">
-                <span>
-                  <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'hireme')">hire me</a>
-                </span>
-              </div>
-            </div>
-            
-          </section>
-          </div>
-    
-          <!--tutorials and learning
-          <section class="container learning phpcupcakeshop hidden">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://phpcupcake.shop">php cupcake shop</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">a collection of snippets</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://phpcupcake.shop">view site</a>
-                </span>
-              </div>
-            </div>
-          </section>
 
-          <!--end tutorials and learing-->
     <section id="about" class="about hidden">
       <div class="aboutparent">
         <div class="aboutchild1">
@@ -578,31 +467,16 @@
             Along the way I have developed self-taught skills in HTML, CSS, JavaScript, PHP, SQL, XML, JSON. 
             Now, I'm no longer solely self-taught as I'm currently in my sophomore year, pursuing a Bachelor's of Science degree in Computer Science.
           </p>
+          <p> For security, hiring can be done through peopleperhour, offering Escrow.
+          </p>
           <p>All source code that is available is free for personal or educational use.</p>
           <a href="https://www.buymeacoffee.com/aemegi">Buy Me a Coffee.</a>
+          <br /><a href="https://www.peopleperhour.com/site/register?rfrd=11330878.5">Hire Me on PeoplePerHour.</a>
+          <br /><a href="https://www.patreon.com/aemegi0753">Subscribe to PhpCupcake Framework on Patreon.</a>
 
         </div>
       </section>
-      <section id="hireme" class="hireme hidden">
-        <div class="hiremeparent">
-            <!--
-    PeoplePerHour Profile Widget
-    The div#pph-hire me is the element
-    where the iframe will be inserted.
-    You may move this element wherever
-    you need to display the widget
--->
-<div id="pph-hireme"></div>
-<div class="hiremechild2">
-  <a href="https://www.linkedin.com/in/andreacrofoot/" class="fa fa-linkedin" style="font-size: 32px; padding: 8px;"></a>
-  <a href="https://github.com/aemegi/" class="fa fa-github" style="font-size: 32px; padding: 8px;"></a>
-  <a href="mailto:aemegi@icloud.com" class="fa fa-envelope" style="font-size: 32px; padding: 8px;"></a>
-  <p> For security, hiring can be done through peopleperhour, offering Escrow.
-  </p>
-  <p>All source code that is available is free for personal or educational use.</p>
-  <a href="https://www.buymeacoffee.com/aemegi">Buy Me a Coffee.</a>
-
-</div>
+ 
 <script type="text/javascript">
 (function(d, s) {
     var useSSL = 'https:' == document.location.protocol;
