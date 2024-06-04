@@ -1,498 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JLW2JWQKWJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JLW2JWQKWJ');
-</script>
-
-      
-<script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script> <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhpCupcakeShop - Coming Soon</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Dancing+Script:wght@400..700&display=swap');
     body {
-      margin: 0;
-      padding: 0;
-    }
-
-    main {
       display: flex;
+      flex-direction: row;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: whitesmoke;
     }
 
-    #desktop {
-      position: absolute;
-      padding-top: 0;
+    .left-section {
+      background-color: whitesmoke;
+      width: 50%;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .php {
+      color: #8892bf;
+      font-size: 10rem;
+      margin-bottom: 1rem;
+    }
+
+    .cupcakeshop {
+      font-size: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    .coming-soon {
+      color: chocolate;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .patreon-link {
+      color: #8892bf;
+      text-decoration: none;
+      font-size: 1.5rem;
+      padding: 20px;
+    }
+
+    .right-section {
+      width: 50%;
       height: 100vh;
-      padding-left: 20px;
-      background-color: #333;
-      color: whitesmoke;
-    }
-    #mobile {
-      position: fixed;
-      width: 100vw;
-      z-index: 10;
+      overflow: hidden;
     }
 
-    .animated-element {
-      position: absolute;
-      top: 0;
-      right: -100%;
-      background-color: #f0f0f0;
-      animation-name: slideIn;
-      animation-duration: 1s;
-      animation-delay: 0.5s;
-      animation-fill-mode: forwards;
+    .video {
+      height: 100%;
+      object-fit: cover;
     }
 
-    @keyframes slideIn {
-      0% { right: -100%; }
-      100% { right: 0; }
-    }
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
 
-    a {
-      font-weight: bolder;
+      .left-section, .right-section {
+        width: 100%;
+      }
+
+      .right-section {
+        height: 50vh;
+      }
     }
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.chocolate {
+  font-family: "Chocolate Classical Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#demo a {
+    color: #000;
+    text-decoration: wavy;
+}
+
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <main>
-          
-<!-- Top Navigation Menu -->
-<nav>
-        <div id="desktop">
-            <!-- Your navigation menu goes here --><div>
-                <h2 style="margin-right: 75px;">aemegi.github.io</h2>
-             
-            <div class="tab">
-              <button class="tablinks" onclick="openTab(event, 'all')">All</button>
-              <button class="tablinks" onclick="openTab(event, 'wordpress')">Wordpress</button>
-              <button class="tablinks" onclick="openTab(event, 'html')">HTML</button>
-              <button class="tablinks" onclick="openTab(event, 'css')">CSS</button>
-              <button class="tablinks" onclick="openTab(event, 'javascript')">JavaScript</button>
-              <button class="tablinks" onclick="openTab(event, 'php')">php</button>
-              <button class="tablinks" onclick="openTab(event, 'mysql')">MySQL</button>
-              <button class="tablinks" onclick="openTab(event, 'API')">API</button>
-              <hr hidden />
-              <button style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'about')">about</button>
-              <hr hidden />
-              <!--<button style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'learning')">tutorials and learning</button>-->
-            </div> 
-          </div>
-            
- 
-          </div>
+  <div class="left-section">
+    <div class="php chocolate">PHP</div>
+    <div class="cupcakeshop dancing-script">cupcakeshop</div>
+    <div class="coming-soon chocolate">coming soon</div>
+    <div id="demo" class="chocolate"><a href="https://demo.phpcupcake.shop" class="chocolate">demo of development progress</a></div>
+    <a href="https://www.patreon.com/phpcupcakeshop" class="chocolate patreon-link"><span class="fa-brands fa-patreon"></span>&nbsp;Patreon</a>
+    <a href="https://github.com/PhpCupcakeShop" class="chocolate patreon-link"><span class="fa-brands fa-github"></span>&nbsp;GitHub</a>
+    <a href="https://www.youtube.com/@phpcupcakes" class="chocolate patreon-link"><span class="fa-brands fa-youtube"></span>&nbsp;YouTube</a>
 
-                
-        <div id="mobile">
-          <div class="topnav">
-            <a href="#home" class="active">aemegi.github.io</a>
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-                <a class="tablinks" onclick="openTab(event, 'all')">All</a>
-                <a class="tablinks" onclick="openTab(event, 'wordpress')">Wordpress</a>
-                <a class="tablinks" onclick="openTab(event, 'html')">HTML</a>
-                <a class="tablinks" onclick="openTab(event, 'css')">CSS</a>
-                <a class="tablinks" onclick="openTab(event, 'javascript')">JavaScript</a>
-                <a class="tablinks" onclick="openTab(event, 'php')">php</a>
-                <a class="tablinks" onclick="openTab(event, 'mysql')">MySQL</a>
-                <a class="tablinks" onclick="openTab(event, 'MERN')">MERN</a>
-                <hr hidden />
-                <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'about')">about</a>
-           
-                <hr hidden />
-                <!--<a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'learning')">tutorials and learning</a>-->
-           
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-        </div>
-          </nav>
-    <div class="content portfolio tab-container">
-        <section id="tomatolovecarrot" class="container tomatolovecarrot tabcontent php mysql">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://companions.phpcupcake.shop/">tomatolovecarrot</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">
-                  <a href="https://companions.phpcupcake.shop/index.php?startsession=edit">try out edit mode.</a>
-                </p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://companions.phpcupcake.shop/">view site</a>
-                </span>
-                <span>
-                 <!-- <a href="https://aemegi.wordpress.com/tomatolovecarrot/">more info</a> -->
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/tomatolovecarrot/blob/main/index.php">source code</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/tomatolovecarrot/archive/refs/heads/main.zip">download</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="periodictable" class="container periodictable tabcontent html css">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://aemegi.github.io/periodic-table/">periodic table of the elements</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">resize the screen.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://aemegi.github.io/periodic-table/">view site</a>
-                </span>
-                <span>
-                  <a href="https://aemegi.wordpress.com/periodic-table-of-elements/">more info</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/periodic-table">source code</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/periodic-table/archive/refs/heads/main.zip">download</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="tarotcards" class="container tarotcards tabcontent html javascript">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://aemegi.github.io/tarotcards/">the pictorial key to the tarot</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">search the page.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://aemegi.github.io/tarotcards/">view site</a>
-                </span>
-                <span>
-                  <!--<a href="https://aemegi.wordpress.com/cardcast/">more info</a>-->
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/tarotcards">source code</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/tarotcards/archive/refs/heads/main.zip">download</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="imgmapofspecies" class="container imgmapofspecies tabcontent html">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://aemegi.github.io/animagemapofspecies/">An Image Map of Species</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">click on a hominid.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://aemegi.github.io/animagemapofspecies/">view site</a>
-                </span>
-                <span>
-                  <!-- <a href="https://aemegi.wordpress.com/animagemapofspecies/">more info</a> -->
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/animagemapofspecies/tree/main">source code</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/animagemapofspecies/archive/refs/heads/main.zip">download</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="color-crayons" class="container color-crayons tabcontent html css javascript">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://aemegi.github.io/color-crayons/">html color crayons</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">make a mess.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://aemegi.github.io/color-crayons/">view site</a>
-                </span>
-                <span>
-                  <a href="https://aemegi.wordpress.com/color-crayons/">more info</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/color-crayons">source code</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/color-crayons/archive/refs/heads/main.zip">download</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="bookkeeper" class="container bookkeeper tabcontent html css">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://aemegi.github.io/mary-wallace-bookkeeper-css-template/">simple landing page</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">enjoy simplicity.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://aemegi.github.io/mary-wallace-bookkeeper-css-template/">view site</a>
-                </span>
-                <span>
-                  <!-- <a href="https://aemegi.wordpress.com/mary-wallace-10-website/">more info</a>-->
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/mary-wallace-bookkeeper-css-template">source code</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/mary-wallace-bookkeeper-css-template/archive/refs/heads/main.zip">download</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="noahsark" class="container noahsark tabcontent css">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://aemegi.github.io/noahs-ark/">Noah's Ark</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">watch a simple animation.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://aemegi.github.io/noahs-ark/">view site</a>
-                </span>
-                <span>
-                  <!-- <a href="https://aemegi.wordpress.com/noahs-ark/">more info</a> -->
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/noahs-ark">source code</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/noahs-ark/archive/refs/heads/main.zip">download</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="runes" class="container runes tabcontent API">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://runes-frontend.fly.dev/reading">rune cast</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">play with api.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://runes-frontend.fly.dev/reading">view site</a>
-                </span>
-                <span>
-                   <a href="https://aemegi.wordpress.com/runes-api/">more info</a> 
-                </span>
-                <span>
-                <!--  <a href="#">source code</a>-->
-                </span>
-                <span>
-                 <!-- <a href="#">download</a>-->
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="folktale" class="container folktale tabcontent wordpress">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://talesandfolk.com/">folktale</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">purchase that timeless look.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://talesandfolk.com/">view site</a>
-                </span>
-                <span>
-                  <!--<a href="https://aemegi.wordpress.com/folktale/">more info</a>-->
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="neonnomad" class="container neonnomad tabcontent wordpress">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://neonnomad.shop/">neon nomad</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">light your journey.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://neonnomad.shop/">view site</a>
-                </span>
-                <span>
-                  <!-- <a href="https://aemegi.wordpress.com/neon-nomad/">more info</a> -->
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="formflow" class="container formflow tabcontent php">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://formflow.click/">formflow</a> 
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">handle a form.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://formflow.click/">view site</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="madlibs" class="container madlibs tabcontent php mysql">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://madlibs.codecreate.site">madlibs</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">create a story.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://madlibs.codecreate.site">view site</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          
-          <section id="horoscope" class="container horoscope tabcontent API">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://phpcupcake.shop/horoscope/">Horoscope API Integration</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new"><small>Read your horoscope.</small></p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://phpcupcake.shop/horoscope/">view site</a>
-                </span>
-                <span>
-                <!--  <a href="#">source code</a>-->
-                </span>
-                <span>
-                 <!-- <a href="#">download</a>-->
-                </span>
-              </div>
-            </div>
-          </section> 
+  </div>
+  <div class="right-section">
+    <iframe width="560" height="100%" src="https://www.youtube.com/embed/8mICbi2gX5c?si=Dc2LR6M1rmrSJJh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
 
-    <section id="about" class="about hidden">
-      <div class="aboutparent">
-        <div class="aboutchild1">
-          <img src="profilepic.jpg" alt="Avatar" class="avatar">
-        </div>
-        <div class="aboutchild2">
-          <a href="https://www.linkedin.com/in/andreacrofoot/" alt="linkedIn" class="fa fa-linkedin" style="font-size: 32px; padding: 8px;"></a>
-          <a href="https://github.com/aemegi/" alt="github" class="fa fa-github" style="font-size: 32px; padding: 8px;"></a>
-          <a href="mailto:aemegi@icloud.com" alt="email" class="fa fa-envelope" style="font-size: 32px; padding: 8px;"></a>
-          <a href="https://replit.com/@andreacrofoot" alt="replit" class="fa fa-r" style="font-size: 32px; padding: 8px;"></a>
-          <p>
-            <!--In Leiu of a resume for now:--> Hello World, I am Andrea. 
-            I have been learning coding, programming, and operating systems off and on again since the age of 9 or 10. 
-            Along the way I have developed self-taught skills in HTML, CSS, JavaScript, PHP, SQL, XML, JSON. 
-            Now, I'm no longer solely self-taught as I'm currently in my sophomore year, pursuing a Bachelor's of Science degree in Computer Science.
-          </p>
-          <p> For security, hiring can be done through peopleperhour, offering Escrow.
-          </p>
-          <p>All source code that is available is free for personal or educational use.</p>
-          <a href="https://www.buymeacoffee.com/aemegi">Buy Me a Coffee.</a>
-          <br /><a href="https://www.peopleperhour.com/site/register?rfrd=11330878.5">Hire Me on PeoplePerHour.</a>
-          <br /><a href="https://www.patreon.com/PhpCupcakeShop">Subscribe to PhpCupcakeShop on Patreon.</a>
-
-        </div>
-      </section>
- 
-<script type="text/javascript">
-(function(d, s) {
-    var useSSL = 'https:' == document.location.protocol;
-    var js, where = d.getElementsByTagName(s)[0],
-    js = d.createElement(s);
-    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/993219436/11330878.js?width=336&height=335&orientation=vertical&theme=light&hourlies=999750%2C1000056&rnd='+parseInt(Math.random()*10000, 10);
-    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
-}(document, 'script'));
-</script>
-  
-          
-</div>
-
-</section>
-
-  </main>
-  <script src="scripts.js"></script>
 </body>
 </html>
