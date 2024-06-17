@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Pretty Weed</title>
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      max-height: 100%;
+      overflow-y: hidden;
+      font-family: "Crimson Text", serif;
+    }
+
+    .poem, .image {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .poem {
+      background-color: cornsilk;
+      padding: 20px;
+      color: #090909;
+    }
+
+p {
+      padding: 20px;
+      overflow-y: scroll;
+      max-height: 55%;
+}
+    .image {
+      background-image: url('theprettiestweed.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .poem, .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .image {
+        height: 50vh;
+      }
+    }
+
+    h2 {
+}
+    a {
+        color: black;
+    }
+  </style>
+</head>
+<body>
+    <div style="position: absolute; top: 0; left: 0; color: black; padding: 20px; size: 14px;"><a href="index.html"><span class="fa-solid fa-chevron-left"></span></a></div>
+  <div class="poem">
+    <h2>The Pretty Weed</h2>
+        <p>
+            
+            Others live so precariously,<br>
+            My roots are deeply planted,<br>
+            Do the others feel jealousy?<br><br>
+            Sure I have no legs to walk on,<br>
+            No bed to just fall upon,<br>
+            I just grow here on the lawn.<br><br>
+            Every time a grow a bloom,<br>
+            Others come to pluck my womb,<br>
+            Bringing it in to brighten their room.<br><br>
+            Sure, strip away my beauty,<br>
+            After all my roots are deeply planted,<br>
+            It's not as though a seed is my only duty.<br>
+            
+    
+    </p>
+  </div>
+  <div class="image">
+  </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mama Fox</title>
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      max-height: 100%;
+      overflow-y: hidden;
+      font-family: "Crimson Text", serif;
+    }
+
+    .poem, .image {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .poem {
+      background-color: whitesmoke;
+      padding: 20px;
+      color: black;
+    }
+
+p {
+      padding: 20px;
+      overflow-y: scroll;
+      max-height: 75%;
+}
+    .image {
+      background-image: url('mamafox.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .poem, .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .image {
+        height: 50vh;
+      }
+    }
+
+    h2 {
+}
+    a {
+        color: black;
+    }
+  </style>
+</head>
+<body>
+    <div style="position: absolute; top: 0; left: 0; color: black; padding: 20px; size: 14px;"><a href="index.html"><span class="fa-solid fa-chevron-left"></span></a></div>
+  <div class="poem">
+    <h2>Mama Fox</h2>
+        <p>
+          The winter is here,<br>
+          My food is dying,<br>
+          My biggest fear.<br><br>
+          Never a fresh kill,<br>
+          Always vultures and ravens,<br>
+          Never getting my fill.<br><br>
+          The food is dying.<br>
+          Finally a healthy rabbit!<br>
+          Poor thing died crying.<br><br>
+          Digging a hole,<br>
+          Away goes my kill, my fill,<br>
+          Soon I must feed, this new little soul.
+          
+    </p>
+  </div>
+  <div class="image">
+  </div>
+</body>
+</html>

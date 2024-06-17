@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A Free Spirit</title>
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      max-height: 100%;
+      overflow-y: hidden;
+
+      font-family: "Crimson Text", serif;
+    }
+
+    .poem, .image {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .poem {
+      background-color: antiquewhite;
+      padding: 20px;
+      color: black;
+    }
+
+p {
+      padding: 20px;
+      overflow-y: scroll;
+      max-height: 75%;
+}
+    .image {
+      background-image: url('https://imgur.com/undefined');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .poem, .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .image {
+        height: 50vh;
+      }
+    }
+    h2 {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    }
+    a {
+        color: black;
+    }
+  </style>
+</head>
+<body>
+    <div style="position: absolute; top: 0; left: 0; color: black; padding: 20px; size: 14px;"><a href="index.html"><span class="fa-solid fa-chevron-left"></span></a></div>
+  <div class="poem">
+    <h2>A Free Spirit</h2>
+    <p align="center">
+        I hop through the woods,<br>
+        <h2>JUMP! JUMP! JUMP!</h2>
+        To find myself some goods.  <br> 
+        <h2>JUMP! JUMP! JUMP!</h2>
+        <br>
+        Where will I go?   <br>
+        <h2>JUMP! JUMP! JUMP!</h2>
+        Not even I know.  <br> 
+        <h2>JUMP! JUMP! JUMP!</h2>
+        I happen upon a garden.  <br> 
+        <h2>JUMP! JUMP! JUMP!</h2>
+        <br>
+        "Where will I go next?"   <br> 
+        I beg your pardon?<br>
+        <h2>JUMP! JUMP! JUMP!</h2>
+        <center>That's all up to me!<br></center>
+        Because I'm happy and I'm free!
+    </p>
+  </div>
+  <div class="image">
+  </div>
+</body>
+</html>

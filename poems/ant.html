@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Ant and the Seed</title>
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      max-height: 100%;
+      overflow-y: hidden;
+      font-family: "Crimson Text", serif;
+    }
+
+    .poem, .image {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .poem {
+      background-color: #090909;
+      padding: 20px;
+      color: whitesmoke;
+    }
+
+p {
+      padding: 20px;
+      overflow-y: scroll;
+      max-height: 55%;
+}
+    .image {
+      background-image: url('theantandtheseed.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .poem, .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .image {
+        height: 50vh;
+      }
+    }
+
+    h2 {
+}
+    a {
+        color: whitesmoke;
+    }
+  </style>
+</head>
+<body>
+    <div style="position: absolute; top: 0; left: 0; color: whitesmoke; padding: 20px; size: 14px;"><a href="index.html"><span class="fa-solid fa-chevron-left"></span></a></div>
+  <div class="poem">
+    <h2>The Ant and the Seed</h2>
+        <p>
+            She walked<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;with a seed on her back.<br>
+The crack in the sidewalk<br>
+&nbsp;&nbsp;&nbsp;&nbsp;was too deep.<br><br>
+She dropped the seed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and found another path.<br>
+When she came back<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the seed was still there.<br>
+
+            
+    
+    </p>
+  </div>
+  <div class="image">
+  </div>
+</body>
+</html>

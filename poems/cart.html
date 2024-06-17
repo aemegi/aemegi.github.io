@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Tinkerer and His Cart</title>
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      max-height: 100%;
+      overflow-y: hidden;
+      font-family: "Crimson Text", serif;
+    }
+
+    .poem, .image {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .poem {
+      background-color: black;
+      padding: 20px;
+      color: whitesmoke;
+    }
+
+p {
+      padding: 20px;
+      overflow-y: scroll;
+      max-height: 55%;
+}
+    .image {
+      background-image: url('thetinkererandhiscart.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .poem, .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .image {
+        height: 50vh;
+      }
+    }
+
+    h2 {
+}
+    a {
+        color: whitesmoke;
+    }
+  </style>
+</head>
+<body>
+    <div style="position: absolute; top: 0; left: 0; color: whitesmoke; padding: 20px; size: 14px;"><a href="index.html"><span class="fa-solid fa-chevron-left"></span></a></div>
+  <div class="poem">
+    <h2>The Tinkerer and The Cart</h2>
+        <p>
+            
+            The toy,<br>
+            It spins,<br>
+            It twirls,<br>
+            You can stack it,<br>
+            You can bend it,<br>
+            You can pull it apart,<br>  
+            and put it back together.<br><br>
+            The man,<br>
+            He was so smart,<br>
+            He thought:   <br>
+            "Why this toy is a work of art, <br>   
+            I want this toy to be my cart,   <br> 
+            Then I can use it to carry all my art."<br><br>
+            He tried,   <br>
+            and tried,      <br>
+            but this toy was not a cart,      <br>
+            this toy was it's own work of art.
+            
+    
+    </p>
+  </div>
+  <div class="image">
+  </div>
+</body>
+</html>

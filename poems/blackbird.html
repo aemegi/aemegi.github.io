@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Robins Egg Blue</title>
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      max-height: 100%;
+      overflow-y: hidden;
+      font-family: "Crimson Text", serif;
+    }
+
+    .poem, .image {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .poem {
+      background-color: black;
+      padding: 20px;
+      color: whitesmoke;
+    }
+p {
+      padding: 20px;
+      overflow-y: scroll;
+      max-height: 75%;
+}
+    .image {
+      background-image: url('happyrobin.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .poem, .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .image {
+        height: 50vh;
+      }
+    }
+    h2 {
+}
+
+    a {
+        color: whitesmoke;
+    }
+  </style>
+</head>
+<body>
+    <div style="position: absolute; top: 0; left: 0; color: white; padding: 20px; size: 14px;"><a href="index.html"><span class="fa-solid fa-chevron-left"></span></a></div>
+  <div class="poem">
+    <h2>Robins egg blue</h2>
+    <p>
+        
+        I'm a black bird. <br>
+        My egg is blue,    <br>
+        but all I see inside-  <br>             
+        &nbsp;&nbsp;&nbsp;&nbsp; — is you.<br>
+        I love you all the same,   <br>
+        Even if you are not truly mine,<br>
+        For one day I will teach you,   <br>
+        This world is just fine.<br>
+        You will be taught to fly,    <br>
+        and I will ensure you are fed.<br>
+        Others will scowl,  <br>
+        "A crow? A robin?"  <br>
+        "What an unlikely pair!"<br>
+        It matters not,<br>
+        We are both cowl,     <br>
+        and love for you,     <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; -I can share.<br>
+        I love you all the same,<br>
+        Even if you are not truly mine,<br>
+        For one day I will teach you,<br>
+        This world is just fine.
+    </p>
+  </div>
+  <div class="image">
+  </div>
+</body>
+</html>

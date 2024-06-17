@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Whale Song</title>
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script>
+  <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      max-height: 100%;
+      overflow-y: hidden;
+      font-family: "Crimson Text", serif;
+    }
+    .poem, .image {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .poem {
+      background-color: antiquewhite;
+      padding: 20px;
+    }
+p {
+      padding: 20px;
+      overflow-y: scroll;
+      max-height: 50%;
+}
+    .image {
+      background-image: url('whalesong.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .poem, .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .image {
+        height: 50vh;
+      }
+    }
+
+    a {
+        color: black;
+    }
+h2 {
+  font-family: "Playwrite CO", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+  </style>
+</head>
+<body>
+    <div style="position: absolute; top: 0; left: 0; color: white; padding: 20px; size: 14px;"><a href="index.html"><span class="fa-solid fa-chevron-left"></span></a></div>
+  <div class="poem">
+    <h2>Whale Song</h2>
+    <p>
+    I hear your song,<br>
+    I sing it back,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Far and wide.<br>
+    I sang your song,<br>
+    I hear it back,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Far and wide.<br>
+<br>
+    Another did <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;not-understand.<br>
+    Another sang <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;it-far, <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;very far.<br>
+    Someday it will come back,<br>
+    You will no-longer hear-your song.
+    </p>
+  </div>
+  <div class="image">
+  </div>
+</body>
+</html>

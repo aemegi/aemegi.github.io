@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quadrupeds That Meow</title>
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      max-height: 100%;
+      overflow-y: hidden;
+      font-family: "Crimson Text", serif;
+    }
+
+    .poem, .image {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .poem {
+      background-color: whitesmoke;
+      padding: 20px;
+      color: black;
+    }
+
+p {
+      padding: 20px;
+      overflow-y: scroll;
+      max-height: 50%;
+}
+    .image {
+      background-image: url('quadrepedsthatmeow.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .poem, .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .image {
+        height: 50vh;
+      }
+    }
+    h2 {
+    font-family: "Delius Unicase", cursive;
+  font-weight: 400;
+  font-style: normal;
+    }
+    a {
+        color: black;
+    }
+  </style>
+</head>
+<body>
+    <div style="position: absolute; top: 0; left: 0; color: black; padding: 20px; size: 14px;"><a href="index.html"><span class="fa-solid fa-chevron-left"></span></a></div>
+  <div class="poem">
+    <h2>Quadrupeds That Meow</h2>
+    <p>
+        I'm so wise,<br>
+        No one is smarter.<br>
+        <br>
+        I'm so wise,<br>
+        bipedal species,<br>
+        Will feed me,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;and clean up my feces.<br>
+        <br>
+        Don't get me wrong,<br>
+        I love them I do!<br>
+        I purr when they hug,<br>
+        I'm sad when they "shoo!"<br>
+        <br>
+        But when they come home,<br>
+        I sit on my throne,<br>
+        I only will swoon,<br>
+        When they start mashing cans<br> 
+        &nbsp;&nbsp;&nbsp;&nbsp;of winged beasties!
+    </p>
+  </div>
+  <div class="image">
+  </div>
+</body>
+</html>

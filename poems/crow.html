@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Where are my Crow?</title>
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      max-height: 100%;
+      overflow-y: hidden;
+      font-family: "Crimson Text", serif;
+    }
+
+    .poem, .image {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .poem {
+      background-color: black;
+      padding: 20px;
+      color: whitesmoke;
+    }
+p {
+      padding: 20px;
+      overflow-y: scroll;
+      max-height: 75%;
+}
+    .image {
+      background-image: url('crow.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .poem, .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .image {
+        height: 50vh;
+      }
+    }
+    h2 {
+      font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+    a {
+        color: whitesmoke;
+    }
+  </style>
+</head>
+<body>
+    <div style="position: absolute; top: 0; left: 0; color: white; padding: 20px; size: 14px;"><a href="index.html"><span class="fa-solid fa-chevron-left"></span></a></div>
+  <div class="poem">
+    <h2>Where are my crow?</h2>
+    <p>
+        "caw"<br>
+        I call out,<br>
+        No reply.<br>
+        <br>
+        "caw!"<br>
+        I call out,    <br>
+        No reply.<br>
+        <br>
+        In my minds eye,  <br>  
+        things have gone awry,   <br> 
+        my murder is not nearby.<br>
+        <br>
+        "CAW!"<br>
+        <br>
+        My mother used to sigh,<br>
+        "a crow never forgets a face, <br>
+        look up, look them in the eye, <br>
+        anywhere you go, <br>
+        you will see a crow."<br>
+        <br>
+        "NO!" I decry!<br>
+        "Mother it was all a lie!"<br>
+        "CAAAAAAW!"<br>
+    </p>
+  </div>
+  <div class="image">
+  </div>
+</body>
+</html>

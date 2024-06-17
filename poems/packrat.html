@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Pack Rat</title>
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      max-height: 100%;
+      overflow-y: hidden;
+      font-family: "Crimson Text", serif;
+    }
+
+    .poem, .image {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .poem {
+      background-color: black;
+      padding: 20px;
+      color: whitesmoke;
+    }
+
+p {
+      padding: 20px;
+      overflow-y: scroll;
+      max-height: 55%;
+}
+    .image {
+      background-image: url('thepackrat.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .poem, .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .image {
+        height: 50vh;
+      }
+    }
+
+    h2 {
+}
+    a {
+        color: white;
+    }
+  </style>
+</head>
+<body>
+    <div style="position: absolute; top: 0; left: 0; color: whitesmoke; padding: 20px; size: 14px;"><a href="index.html"><span class="fa-solid fa-chevron-left"></span></a></div>
+  <div class="poem">
+    <h2>The Pack Rat</h2>
+        <p>
+            What will I find?   <br>
+            Something shiny?   <br>
+            Something soft?   <br>
+            Something bright and colorful?<br>
+            I have this acorn to give,<br>
+            Or this pellet.<br>
+            Will they accept, <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;my offering?<br>
+            I scurry across their hard floor,  <br>
+            Filled with peanut shells.<br>
+            The acorn in my mouth,   <br>
+            I set it down,   <br>
+            To taste the salt,<br>
+            And onward I go,<br>
+            What will I find?<br>
+            Ah ha!   <br>
+            Here on the ledge,   <br>
+            Something shiny and flat,  <br> 
+            Smooth and round,       <br>
+            Yet jagged.<br>
+            I wonder if they will accept my acorn.<br>
+            
+    
+    </p>
+  </div>
+  <div class="image">
+  </div>
+</body>
+</html>

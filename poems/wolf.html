@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Otter and His Prized Possession</title>
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      max-height: 100%;
+      overflow-y: hidden;
+      font-family: "Crimson Text", serif;
+    }
+
+    .poem, .image {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .poem {
+      background-color: black;
+      padding: 20px;
+      color: whitesmoke;
+    }
+
+p {
+      padding: 20px;
+      overflow-y: scroll;
+      max-height: 75%;
+}
+    .image {
+      background-image: url('lonelywolf.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .poem, .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .image {
+        height: 50vh;
+      }
+    }
+    h2 {
+    }
+    a {
+        color: whitesmoke;
+    }
+  </style>
+</head>
+<body>
+    <div style="position: absolute; top: 0; left: 0; color: black; padding: 20px; size: 14px;"><a href="index.html"><span class="fa-solid fa-chevron-left"></span></a></div>
+  <div class="poem">
+    <h2>Back to the Pack</h2>
+    <p>I've trekked many a day,    <br>
+        In search of new fare.<br><br>
+        The other creatures turn away,<br>    
+        But my pack,    <br>
+        They're always there.<br><br>
+        The other creatures seem to think,  <br>
+          That they are my prey.<br>
+          They don't understand,    <br>
+          They are actually my support.<br><br>
+          Those in my band,    <br>
+          They always stay,<br>
+          They stick around,   <br>
+           As I head back to them,   <br> 
+           With my report.<br><br>
+           I yell for my mates, <br>
+              I hear no response.<br>
+              I howl and yowl.     <br>
+              I must move on,     <br> 
+                     I do with nonchalance.
+    </p>
+  </div>
+  <div class="image">
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Otter and His Prized Possession</title>
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      max-height: 100%;
+      overflow-y: hidden;
+      font-family: "Crimson Text", serif;
+    }
+
+    .poem, .image {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .poem {
+      background-color: antiquewhite;
+      padding: 20px;
+      color: black;
+    }
+
+p {
+      padding: 20px;
+      overflow-y: scroll;
+      max-height: 75%;
+}
+    .image {
+      background-image: url('otter.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .poem, .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .image {
+        height: 50vh;
+      }
+    }
+    h2 {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    }
+    a {
+        color: black;
+    }
+  </style>
+</head>
+<body>
+    <div style="position: absolute; top: 0; left: 0; color: black; padding: 20px; size: 14px;"><a href="index.html"><span class="fa-solid fa-chevron-left"></span></a></div>
+  <div class="poem">
+    <h2>The Otter & His Prized Possession</h2>
+    <p>
+        When I found it, <br>
+        I knew I had to have it,<br>
+        It was mine.<br>
+        It immediately became,<br>
+        An extension of me.<br>
+        I stored it in my pocket,<br>
+        Day after day,<br>
+        As I would splash and swim and play.<br>
+        When I got hungry,<br>
+        I'd swim below,<br>
+        Bring up a treat,<br>
+        and smash it with that smooth, unbreakable thing.<br>
+        that is a part of me.<br>
+        I pull it out,<br>
+        Now and again,<br>
+        It brings me joy,<br>
+        This thing that provides me with sustenance.<br>
+        ....<br>
+        ...<br>
+        ....<br><br>
+        Today it is gone!<br>
+        OH NO!<br>
+        Where did it go?<br>
+        Today it is gone...<br>
+        I long for it so.
+        
+    </p>
+  </div>
+  <div class="image">
+  </div>
+</body>
+</html>

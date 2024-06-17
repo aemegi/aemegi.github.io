@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coyote Camaraderie</title>
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      max-height: 100%;
+      overflow-y: hidden;
+      font-family: "Crimson Text", serif;
+    }
+
+    .poem, .image {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .poem {
+      background-color: #36322d;
+      padding: 20px;
+      color: whitesmoke;
+    }
+
+p {
+      padding: 20px;
+      overflow-y: scroll;
+      max-height: 75%;
+}
+    .image {
+      background-image: url('coyote.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .poem, .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .image {
+        height: 50vh;
+      }
+    }
+
+    h2 {
+  font-family: "Playwrite CO", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+    a {
+        color: whitesmoke;
+    }
+  </style>
+</head>
+<body>
+    <div style="position: absolute; top: 0; left: 0; color: white; padding: 20px; size: 14px;"><a href="index.html"><span class="fa-solid fa-chevron-left"></span></a></div>
+  <div class="poem">
+    <h2>Coyote Camaraderie</h2>
+        <p align="center">
+        He struts by with nonchalance.<br>
+        I wait,   <br>
+        and wait,      <br>
+        and wait.<br><br>
+
+        My turn,  <br>
+        The little creature peaks out.  <br>
+        He looks about.  <br>
+        I'm waiting to see if he notices,   <br>  
+        My partner strutted by,        <br>
+        Long ago.  <br>
+        That is all he notices.<br>
+        Mine for the taking!<br>
+        <br>
+        He struts back,      <br>
+        excited,          <br>
+        and eager.<br>
+        Our song fills the air,    <br> 
+        and reaches the stars.<br>
+        <br>
+        Back to the burrow we go,<br>   
+        where I bask in the success-    <br> 
+        that is ours,   <br>
+        With my trickter comrade,   <br>  
+        and his scars.<br>
+    
+    </p>
+  </div>
+  <div class="image">
+  </div>
+</body>
+</html>
