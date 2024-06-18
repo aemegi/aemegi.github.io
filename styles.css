@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-image img {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-info h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  .profile-info p {
+    margin: 5px 0 15px;
+    color: #666;
+  }
+  
+  .fa {
+
+    color: black;
+    text-decoration: none;
+  }
+  
+  .profile-content h2 {
+    margin-top: 30px;
+  }
+  
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .project-list .project {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+   /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+
+}
+
+.modaltext {
+
+  color: black;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+#myBtn {
+  border: 0px;
+  background-color: inherit;
+  cursor: pointer;
+color: #F2F2F2;
+}
+body {
+  background-color: #252238;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #F2F2F2;
+  margin: 30px 0;
+}
+
+h1 {
+  color: #F2F2F2;
+  text-align: center;
+}
+
+p {
+  color: #F2F2F2;
+}
+
+h6 {
+  color: #F9F2F2;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.runes-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding: 20px;
+}
+
+.rune-card {
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 30px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.rune-card:hover {
+  transform: scale(1.05);
+  background-color: #B5B055;
+}
+
+.rune-card h3 {
+  color: #1A2238;
+  font-size: 42px;
+  margin-bottom: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.rune-card p {
+  color: #4B5563;
+  font-size: 16px;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.rune-card:hover h3 {
+  opacity: 0;
+}
+
+.rune-card:hover p {
+  opacity: 1;
+}
+.fa-icon {
+  font-size: 32px; 
+  padding: 8px;
+  color: #f2f2f2;
+}
+a {
+color: coral;
+text-decoration: none;
+}
+.resources-section {
+  padding: 60px 0;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.resource-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #252238;
+}
+
+.resource-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resource-list li {
+  margin-bottom: 10px;
+}
+
+.resource-list li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.resource-list li a:hover {
+  color: #007bff;
+}

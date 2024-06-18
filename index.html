@@ -1,515 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JLW2JWQKWJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JLW2JWQKWJ');
-</script>
-
-      
-<script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script> 
-
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aemegi.github.io</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script> 
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    main {
-      display: flex;
-    }
-
-    #desktop {
-      position: absolute;
-      padding-top: 0;
-      height: 100vh;
-      padding-left: 20px;
-      background-color: #333;
-      color: whitesmoke;
-    }
-    #mobile {
-      position: fixed;
-      width: 100vw;
-      z-index: 10;
-    }
-
-    .animated-element {
-      position: absolute;
-      top: 0;
-      right: -100%;
-      background-color: #f0f0f0;
-      animation-name: slideIn;
-      animation-duration: 1s;
-      animation-delay: 0.5s;
-      animation-fill-mode: forwards;
-    }
-
-    @keyframes slideIn {
-      0% { right: -100%; }
-      100% { right: 0; }
-    }
-
-    a {
-      font-weight: bolder;
-    }
+  
   </style>
 </head>
 <body>
-  <main>
-          
-<!-- Top Navigation Menu -->
-<nav>
-        <div id="desktop">
-            <!-- Your navigation menu goes here --><div>
-                <h2 style="margin-right: 75px;">aemegi.github.io</h2>
-             
-            <div class="tab">
-              <button class="tablinks" onclick="openTab(event, 'all')">All</button>
-              <button class="tablinks" onclick="openTab(event, 'wordpress')">Wordpress</button>
-              <button class="tablinks" onclick="openTab(event, 'html')">HTML</button>
-              <button class="tablinks" onclick="openTab(event, 'css')">CSS</button>
-              <button class="tablinks" onclick="openTab(event, 'javascript')">JavaScript</button>
-              <button class="tablinks" onclick="openTab(event, 'php')">PHP</button>
-              <button class="tablinks" onclick="openTab(event, 'mysql')">MySQL</button>
-              <button class="tablinks" onclick="openTab(event, 'API')">API</button>
-              <hr hidden />
-              <button style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'about')">about</button>
-              <hr hidden />
-              <!--<button style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'learning')">tutorials and learning</button>-->
-            </div> 
-          </div>
+  <div class="container">
+    <div class="profile-header">
+      <div class="profile-image">
+        <img src="profilepic.jpg" alt="Profile Picture">
+      </div>
+      <div class="profile-info">
+        <h1>Hello World! I'm Andrea</h1>
+        <p>Student <br>&nbsp;&nbsp;in Computer Science & Web Design</p>
+        <div class="profile-buttons">
+
+            <a href="https://www.linkedin.com/in/andreacrofoot/" alt="linkedIn" class="fa-icon fa fa-linkedin"></a>
+            <a href="https://github.com/aemegi/" alt="github" class="fa-icon fa fa-github"></a>
+            <a href="https://x.com/aemegi_" alt="twitter" class="fa-icon fa fa-twitter"></a>
+            <a href="mailto:aemegi@icloud.com" alt="email" class="fa-icon fa fa-envelope"></a>
             
- 
-          </div>
+            <a href="https://discord.com/invite/jVJYmFz2Ye" alt="discord" class="fa-icon fa-brands fa-discord"></a>
+            <a href="https://codepen.io/aemegi" alt="codepen" class="fa-icon fa-brands fa-codepen"></a>
+            </div>
+      </div>
+    </div>
+    <div class="profile-content">
+      <h2>About Me</h2>
+      <p>&nbsp;&nbsp; I am a self-taught webdeveloper.  My first website was when I was ten years old published on GeoCities, about my pet frogs.  
+        I am thirty-five now and have decided to make webdevelopment my lifelong pursuit, so I am in my second year of school for Computer Science and a Minor in Graphic Design for Web.  
+       I have made a few things in Python which can be found on my <a href="https://replit.com/@andreacrofoot" alt="replit">Replit</a>. I have made a few fun things in HTML/CSS/JS which can be found on my <a href="https://codepen.io/aemegi" alt="codepen">codepen</a>.
+       
+       </p><p>
+        My current project is <a href="https://phpcupcake.shop">PhpCupcakeShop</a>, a PHP framework built 
+        for simplicity and scalability without any PHP dependencies.        </p>
+        <p>&nbsp;&nbsp; While my first novel may always be a work in progress, I have a love for creative writing.  
+          <a href="https://aemegi.github.io/poems/index.html">My animal poetry</a> strives to capture unique perspectives and behaviors of animals.
+        </p>
+        
+      
+      </p>
+      <p>
 
-                
-        <div id="mobile">
-          <div class="topnav">
-            <a href="#home" class="active">aemegi.github.io</a>
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-                <a class="tablinks" onclick="openTab(event, 'all')">All</a>
-                <a class="tablinks" onclick="openTab(event, 'wordpress')">Wordpress</a>
-                <a class="tablinks" onclick="openTab(event, 'html')">HTML</a>
-                <a class="tablinks" onclick="openTab(event, 'css')">CSS</a>
-                <a class="tablinks" onclick="openTab(event, 'javascript')">JavaScript</a>
-                <a class="tablinks" onclick="openTab(event, 'php')">php</a>
-                <a class="tablinks" onclick="openTab(event, 'mysql')">MySQL</a>
-                <a class="tablinks" onclick="openTab(event, 'MERN')">MERN</a>
-                <hr hidden />
-                <a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'about')">about</a>
-           
-                <hr hidden />
-                <!--<a style="position: inherit; margin-top: 20px;" id="toggleButton" class="tablinks" onclick="openTab(event, 'learning')">tutorials and learning</a>-->
-           
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-        </div>
-          </nav>
-    <div class="content portfolio tab-container">
-        <section id="tomatolovecarrot" class="container tomatolovecarrot tabcontent php mysql">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://companions.phpcupcake.shop/">tomatolovecarrot</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">
-                  <a href="https://companions.phpcupcake.shop/index.php?startsession=edit">try out edit mode.</a>
-                </p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://companions.phpcupcake.shop/">view site</a>
-                </span>
-                <span>
-                 <!-- <a href="https://aemegi.wordpress.com/tomatolovecarrot/">more info</a> -->
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/tomatolovecarrot/blob/main/index.php">source code</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/tomatolovecarrot/archive/refs/heads/main.zip">download</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="periodictable" class="container periodictable tabcontent html css">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://aemegi.github.io/periodic-table/">periodic table of the elements</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">resize the screen.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://aemegi.github.io/periodic-table/">view site</a>
-                </span>
-                <span>
-                  <a href="https://aemegi.wordpress.com/periodic-table-of-elements/">more info</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/periodic-table">source code</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/periodic-table/archive/refs/heads/main.zip">download</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="tarotcards" class="container tarotcards tabcontent html javascript">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://aemegi.github.io/tarotcards/">the pictorial key to the tarot</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">search the page.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://aemegi.github.io/tarotcards/">view site</a>
-                </span>
-                <span>
-                  <!--<a href="https://aemegi.wordpress.com/cardcast/">more info</a>-->
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/tarotcards">source code</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/tarotcards/archive/refs/heads/main.zip">download</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="imgmapofspecies" class="container imgmapofspecies tabcontent html">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://aemegi.github.io/animagemapofspecies/">An Image Map of Species</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">click on a hominid.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://aemegi.github.io/animagemapofspecies/">view site</a>
-                </span>
-                <span>
-                  <!-- <a href="https://aemegi.wordpress.com/animagemapofspecies/">more info</a> -->
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/animagemapofspecies/tree/main">source code</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/animagemapofspecies/archive/refs/heads/main.zip">download</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="color-crayons" class="container color-crayons tabcontent html css javascript">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://aemegi.github.io/color-crayons/">html color crayons</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">make a mess.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://aemegi.github.io/color-crayons/">view site</a>
-                </span>
-                <span>
-                  <a href="https://aemegi.wordpress.com/color-crayons/">more info</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/color-crayons">source code</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/color-crayons/archive/refs/heads/main.zip">download</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="bookkeeper" class="container bookkeeper tabcontent html css">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://aemegi.github.io/mary-wallace-bookkeeper-css-template/">simple landing page</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">enjoy simplicity.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://aemegi.github.io/mary-wallace-bookkeeper-css-template/">view site</a>
-                </span>
-                <span>
-                  <!-- <a href="https://aemegi.wordpress.com/mary-wallace-10-website/">more info</a>-->
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/mary-wallace-bookkeeper-css-template">source code</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/mary-wallace-bookkeeper-css-template/archive/refs/heads/main.zip">download</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="noahsark" class="container noahsark tabcontent css">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://aemegi.github.io/noahs-ark/">Noah's Ark</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">watch a simple animation.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://aemegi.github.io/noahs-ark/">view site</a>
-                </span>
-                <span>
-                  <!-- <a href="https://aemegi.wordpress.com/noahs-ark/">more info</a> -->
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/noahs-ark">source code</a>
-                </span>
-                <span>
-                  <a href="https://github.com/aemegi/noahs-ark/archive/refs/heads/main.zip">download</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="runes" class="container runes tabcontent API">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://runes-frontend.fly.dev/reading">rune cast</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">play with api.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://runes-frontend.fly.dev/reading">view site</a>
-                </span>
-                <span>
-                   <a href="https://aemegi.wordpress.com/runes-api/">more info</a> 
-                </span>
-                <span>
-                <!--  <a href="#">source code</a>-->
-                </span>
-                <span>
-                 <!-- <a href="#">download</a>-->
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="folktale" class="container folktale tabcontent wordpress">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://talesandfolk.com/">folktale</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">purchase that timeless look.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://talesandfolk.com/">view site</a>
-                </span>
-                <span>
-                  <!--<a href="https://aemegi.wordpress.com/folktale/">more info</a>-->
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="neonnomad" class="container neonnomad tabcontent wordpress">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://neonnomad.shop/">neon nomad</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">light your journey.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://neonnomad.shop/">view site</a>
-                </span>
-                <span>
-                  <!-- <a href="https://aemegi.wordpress.com/neon-nomad/">more info</a> -->
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="formflow" class="container formflow tabcontent php">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://formflow.click/">formflow</a> 
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">handle a form.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://formflow.click/">view site</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          <section id="madlibs" class="container madlibs tabcontent php mysql">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://madlibs.codecreate.site">madlibs</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">create a story.</p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://madlibs.codecreate.site">view site</a>
-                </span>
-              </div>
-            </div>
-          </section>
-          
-          <section id="horoscope" class="container horoscope tabcontent API">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://phpcupcake.shop/horoscope/">Horoscope API Integration</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new"><small>Read your horoscope.</small></p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://phpcupcake.shop/horoscope/">view site</a>
-                </span>
-                <span>
-                <!--  <a href="#">source code</a>-->
-                </span>
-                <span>
-                 <!-- <a href="#">download</a>-->
-                </span>
-              </div>
-            </div>
-          </section> 
-          
-          <section id="phpcupcakeshop" class="container phpcupcakeshop php tabcontent mysql">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>
-                  <a href="https://phpcupcake.shop/">PhpCupcakeShop</a>
-                </p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new"><small>The Sprinkles of PHP Frameworks</small></p>
-              </div>
-              <div class="items cart">
-                <span>
-                  <a href="https://phpcupcake.shop/">view site</a>
-                </span>
-                <span>
-                <!--  <a href="#">source code</a>-->
-                </span>
-                <span>
-                 <!-- <a href="#">download</a>-->
-                </span>
-              </div>
-            </div>
-          </section> 
 
-    <section id="about" class="about hidden">
-      <div class="aboutparent">
-        <div class="aboutchild1">
-          <img src="profilepic.jpg" alt="Avatar" class="avatar">
-        </div>
-        <div class="aboutchild2">
-          <a href="https://www.linkedin.com/in/andreacrofoot/" alt="linkedIn" class="fa fa-linkedin" style="font-size: 32px; padding: 8px;"></a>
-          <a href="https://github.com/aemegi/" alt="github" class="fa fa-github" style="font-size: 32px; padding: 8px;"></a>
-          <a href="mailto:aemegi@icloud.com" alt="email" class="fa fa-envelope" style="font-size: 32px; padding: 8px;"></a>
-          <a href="https://replit.com/@andreacrofoot" alt="replit" class="fa fa-r" style="font-size: 32px; padding: 8px;"></a>
-          <p>
-            <!--In Leiu of a resume for now:--> Hello World, I am Andrea. 
-            I have been learning coding, programming, and operating systems off and on again since the age of 9 or 10. 
-            Along the way I have developed self-taught skills in HTML, CSS, JavaScript, PHP, SQL, XML, JSON. 
-            Now, I'm no longer solely self-taught as I'm currently in my sophomore year, pursuing a Bachelor's of Science degree in Computer Science.
-          </p>
-          <p> For security, hiring can be done through peopleperhour, offering Escrow.
-          </p>
-          <p>All source code that is available is free for personal or educational use.</p>
-          <a href="https://www.buymeacoffee.com/aemegi">Buy Me a Coffee.</a>
-          <br /><a href="https://www.peopleperhour.com/site/register?rfrd=11330878.5">Hire Me on PeoplePerHour.</a>
-          <br /><a href="https://www.patreon.com/PhpCupcakeShop">Subscribe to PhpCupcakeShop on Patreon.</a>
+      </p>
 
-        </div>
-      </section>
+    </div>
+  </div>
+  
 
-</div>
+        <h1>Here is a rune reading for you:</h1><br>
+        <h6>(runes are read from right to left)</h6>
+        <div id="runes-container" class="runes-container"></div>
+        <h6 style="text-align: right; padding-right: 10%;"><button id="myBtn">Get this API</button></h6>
+                                                                            <!-- The Modal -->
+                                                              <div id="myModal" class="modal">
 
-</section>
+                                                                <!-- Modal content -->
+                                                                <div class="modal-content">
+                                                                  <span class="close">&times;</span>
+                                                                  <p class="modaltext">Default Five Stones: <a href="https://runes-backend.fly.dev/api/runes/reading" target="_blank">https://runes-backend.fly.dev/api/runes/reading</a> </p>
+                                                                  <p class="modaltext">Three Stones:  <a href="https://runes-backend.fly.dev/api/runes/readingThree" target="_blank">https://runes-backend.fly.dev/api/runes/readingThree</a> </p>
+                                                                  <p class="modaltext">Five Stones: <a href="https://runes-backend.fly.dev/api/runes/readingFive" target="_blank">https://runes-backend.fly.dev/api/runes/readingFive</a> </p>
+                                                                  <p class="modaltext">Random Amount of Stones: <a href="https://runes-backend.fly.dev/api/runes/readingRandom" target="_blank">https://runes-backend.fly.dev/api/runes/readingRandom</a> </p>
+                                                                  <p class="modaltext">All Stones: <a href="https://runes-backend.fly.dev/api/runes/readingAll" target="_blank">https://runes-backend.fly.dev/api/runes/readingAll</a> </p>
+                                                                  <p class="modaltext"><a href="https://buymeacoffee.com/aemegi" target="_blank">buymeacoffee</a> </p>
+                                                                  
+                                                                </div>
 
-  </main>
-  <script src="scripts.js"></script>
+                                                              </div>
+                                                              <section class="resources-section">
+                                                                <div class="container">
+                                                                  <h2>Some of my favorite Books, Apps and Websites:</h2>
+                                                                  <h6>Please note all amazon links are paid affiliate links.</h6>
+                                                                  <div class="resources-grid">
+                                                                    <div class="resource-card">
+                                                                      <h3>Web Development</h3>
+                                                                      <ul class="resource-list">
+                                                                        <li><a href="https://developer.mozilla.org/en-US/">Mozilla CDN</a></li>
+                                                                        <li><a href="https://www.php.net/">php.net</a></li>
+                                                                        <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
+                                                                        <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                                                                      </ul>
+                                                                    </div>
+                                                                    <div class="resource-card">
+                                                                      <h3>Fine Art</h3>
+                                                                      <ul class="resource-list">
+                                                                        <li><a href="https://amzn.to/3RxCcUU">Keys to Drawing</a></li>
+                                                                        <li><a href="https://amzn.to/4chqVQu">Botanical Drawing in Color</a></li>
+                                                                        <li><a href="https://www.youtube.com/@ArtofWeiHo">Art of Wei YouTube Channel</a></li>
+                                                                      </ul>
+                                                                    </div>
+                                                                    <div class="resource-card">
+                                                                      <h3>Fitness</h3>
+                                                                      <ul class="resource-list">
+                                                                        <li><a href="https://apps.apple.com/us/app/ballet-workout/id1447342760">Ballet Workout iOS App</a></li>
+                                                                        <li><a href="https://apps.apple.com/us/app/yoga-for-beginners-mind-body/id1382141225">Yoga for Beginners iOS App</a></li>
+                                                                      </ul>
+                                                                    </div>
+                                                                    <div class="resource-card">
+                                                                      <h3>Herbalism</h3>
+                                                                      <ul class="resource-list">
+                                                                        <li><a href="https://amzn.to/45xz1lL">A Peterson Field Guide To Western Medicinal Plants And Herbs</a></li>
+                                                                        <li><a href="https://aemegi.tumblr.com/herballist">A List of Herbals from History to the Present</a></li>
+
+                                                                        <li><a href="https://amzn.to/4evUAao">Dian Dincin Buchman's Herbal Medicine</a></li>
+                                                                      </ul>
+                                                                    </div>
+                                                                    <div class="resource-card">
+                                                                      <h3>Botany</h3>
+                                                                      <ul class="resource-list">
+                                                                        <li><a href="https://amzn.to/3RyPDUi">Botany in a Day</a></li>
+                                                                        <li><a href="https://amzn.to/3Rzes2u">Botany for Gardeners</a></li>
+                                                                        <li><a href="https://amzn.to/4c2LhNy">Secret Life of Plants</a></li>
+                                                                        <li><a href="https://amzn.to/3VOlmUn">Women and their Gardens</a></li>
+                                                                      </ul>
+                                                                    </div>
+                                                                    <div class="resource-card">
+                                                                      <h3>Divination and Astrology</h3>
+                                                                      <ul class="resource-list">
+                                                                        <li><a href="https://amzn.to/3RzN30B">Runes for Beginners</a></li>
+                                                                        <li><a href="https://amzn.to/4c3G6wN">The Herbal Tarot</a></li>
+                                                                        <li><a href="https://app.labyrinthos.co/?utm_source=shop&utm_medium=nav&utm_campaign=header">Labyrinthos</a></li>
+                                                                        <li><a href="https://horoscope-app-api.vercel.app/">Horoscope API</a></li>
+                                                                        <li><a href="https://apps.apple.com/us/app/astro-future-daily-horoscope/id1119123378">Astro Future iOS App</a></li>
+                                                                        
+                                                                      </ul>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </section>
+      
+
+
+
+  <script>
+
+// Add smooth scrolling to resource links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+
+
+
+
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
+
+
+    fetch('https://runes-backend.fly.dev/api/runes/reading/')
+      .then(response => response.json())
+      .then(data => {
+        // Get the runes data from the API response
+        const runes = data;
+
+        // Create a container element to hold the runes
+        const container = document.getElementById('runes-container');
+
+        // Loop through the runes and create HTML elements to display them
+        runes.forEach(rune => {
+          // Create a card element for each rune
+          const card = document.createElement('div');
+          card.classList.add('rune-card');
+
+          // Create elements for the rune's name, meaning, and pronunciation
+          const symbolElement = document.createElement('h3');
+          symbolElement.textContent = rune.symbol;
+
+          const nameElement = document.createElement('p');
+          nameElement.textContent = rune.name;
+
+          const pronounceElement = document.createElement('p');
+          pronounceElement.textContent = rune.pronunciation;
+
+          const descriptionElement = document.createElement('p');
+          descriptionElement.textContent = rune.meaning;
+
+          // Append the elements to the card
+          card.appendChild(symbolElement);
+          card.appendChild(nameElement);
+          card.appendChild(pronounceElement);
+          card.appendChild(descriptionElement);
+
+          // Append the card to the container
+          container.appendChild(card);
+        });
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  </script>
 </body>
 </html>
