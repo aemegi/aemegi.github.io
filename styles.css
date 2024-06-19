@@ -1,13 +1,25 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Zeyada&display=swap');
   
+
+h1, h2 {
+ 
+  font-family: "Playfair Display", serif;
+  }
+h3, h4, h5, h6 {
+ 
+    font-family: "Cinzel", serif;
+    }
+  
+  .name {
+
+  font-family: "Zeyada", cursive;
+  }
+
   .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    font-size: 18px;
   }
   
   .profile-header {
@@ -23,23 +35,23 @@ body {
   }
   
   .profile-info h1 {
+    font-family: "Cinzel", serif;
     margin: 0;
     font-size: 28px;
   }
   
   .profile-info p {
     margin: 5px 0 15px;
-    color: #666;
+    color: lightgrey;
+
+    font-family: "Playfair Display", serif;
   }
   
-  .fa {
 
-    color: black;
-    text-decoration: none;
-  }
   
   .profile-content h2 {
     margin-top: 30px;
+    
   }
   
   .project-list {
@@ -107,7 +119,6 @@ color: #F2F2F2;
 }
 body {
   background-color: #252238;
-  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   color: #F2F2F2;
@@ -131,15 +142,14 @@ h6 {
 
 .runes-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
   justify-content: center;
   padding: 20px;
 }
 
 .rune-card {
   background-color: #F2F2F2;
-  border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -147,11 +157,11 @@ h6 {
   justify-content: center;
   margin: 20px;
   padding: 30px;
-  width: 200px;
-  height: 200px;
+  width: min-content;
   text-align: center;
   transition: transform 0.3s ease, background-color 0.3s ease;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .rune-card:hover {
@@ -174,9 +184,6 @@ h6 {
   transition: opacity 0.3s ease;
 }
 
-.rune-card:hover h3 {
-  opacity: 0;
-}
 
 .rune-card:hover p {
   opacity: 1;
@@ -185,6 +192,10 @@ h6 {
   font-size: 32px; 
   padding: 8px;
   color: #f2f2f2;
+  text-decoration: none;
+}
+.fa-icon:hover {
+  color: coral;
 }
 a {
 color: coral;
@@ -233,4 +244,11 @@ text-decoration: none;
 
 .resource-list li a:hover {
   color: #007bff;
+}
+
+footer {
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  align-content: right;
 }
