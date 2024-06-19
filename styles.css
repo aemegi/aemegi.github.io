@@ -252,3 +252,80 @@ footer {
   margin-right: 40%;
   align-content: right;
 }
+
+
+
+
+.image-section {
+  padding: 40px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  
+.image-container {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.overlay-text {
+  display: none;
+}
+.phone-texts {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+}
+}
+@media only screen and (min-width: 1025px) {
+
+  .overlay-text {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+  }
+.phone-texts {
+  display: none;
+}
+
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
