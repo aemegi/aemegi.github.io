@@ -292,7 +292,12 @@ footer {
   overflow: hidden;
 }
 @media only screen and (max-width: 1024px) {
-  
+
+
+.ant {
+  width: 375px;
+  margin: auto;
+}
 .image-container {
   position: relative;
   width: 400px;
@@ -362,7 +367,9 @@ footer {
 }
 }
 @media only screen and (min-width: 1025px) {
-
+.ant {
+  width: 800px;
+}
   .overlay-text {
     color: #fff;
     font-size: 24px;
@@ -431,7 +438,10 @@ footer {
   opacity: 1;
 }
 
-
+#pph {
+  position: relative;
+  top: 200px;
+}
 
 hr {
   color: #58556A;
