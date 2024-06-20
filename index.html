@@ -72,6 +72,21 @@
   </style>
 </head>
 <body>
+
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#runes">Rune Reading API</a>
+    <a href="#phpcupcake">PhpCupcakeShop</a>
+    <a href="#pph">Hire Me</a>
+    <a href="#animalpoems">Animal Poetry</a>
+    <a href="#resources">Resources for Hobbies</a>
+    <a href="#top">Top of Page</a>
+  </div> 
+
+  <main>
+    <span class="comp-hidden" style="font-size:30px;cursor:pointer;position:fixed;background-color:#252238;padding: 5px;border-radius: 4px;z-index: 8;" onclick="openNav()">&#9776;</span>
   <div id="top" class="container2">
     <div class="profile-header">
       <div class="profile-image">
@@ -284,11 +299,11 @@
                                                               </section>
 
 
-                                                              <hr width="600px" align="center">
+<hr width="600px" align="center">
 
 
 <footer>&copy; <span class="name">Andrea Crofoot</span></footer>
-
+</main>
   <script>
 // Add smooth scrolling to resource links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -301,6 +316,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
