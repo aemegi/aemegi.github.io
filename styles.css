@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Zeyada&display=swap');
-  
+ 
+body {
+  margin: 0;
+  padding: 0;
+  color: #F2F2F2;
+  margin: 30px 0;
+  background-color:#ec9e99;
+} 
 
 h1, h2 {
  
@@ -14,19 +21,21 @@ h3, h4, h5, h6 {
 
   font-family: "Zeyada", cursive;
   }
-
-  .container {
-    max-width: 800px;
+main {
+  background-color: #252238;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+    border-radius: 20px;
+
+}
+  .container {
+    padding: 60px;
     font-size: 18px;
     min-height: 100vh;
   }
 
   .container2 {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 60px;
     font-size: 18px;
     min-height: 65vh;
   }
@@ -127,13 +136,6 @@ h3, h4, h5, h6 {
   cursor: pointer;
 color: #F2F2F2;
 }
-body {
-  background-color: #252238;
-  margin: 0;
-  padding: 0;
-  color: #F2F2F2;
-  margin: 30px 0;
-}
 
 h1 {
   color: #F2F2F2;
@@ -176,7 +178,7 @@ h6 {
 
 .rune-card:hover {
   transform: scale(1.05);
-  background-color: goldenrod;
+  background-color: #57425d;
 }
 
 .rune-card h3 {
@@ -186,8 +188,12 @@ h6 {
   transition: opacity 0.3s ease;
 }
 
+.rune-card:hover h3 {
+  color: #f2f2f2;
+}
+
 .rune-card p {
-  color: #4B5563;
+  color: #f2f2f2;
   font-size: 16px;
   margin-top: 10px;
   opacity: 0;
@@ -205,10 +211,10 @@ h6 {
   text-decoration: none;
 }
 .fa-icon:hover {
-  color: coral;
+  color: #f4c080;
 }
 a {
-color: coral;
+color: #f4c080;
 text-decoration: none;
 }
 .resources-section {
@@ -226,6 +232,8 @@ text-decoration: none;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.resource-card:hover {
 }
 
 .resource-card h3 {
@@ -253,7 +261,9 @@ text-decoration: none;
 }
 
 .resource-list li a:hover {
-  color: #007bff;
+  color: #8a94d5;
+  border-radius: 2px;
+  padding: 2px;
 }
 
 footer {
@@ -280,7 +290,7 @@ footer {
   color: #F2F2F2;
 }
 .section-title a:hover {
-  color: coral;
+  color: #f4c080;
 }
 
 .image-container {
@@ -333,6 +343,7 @@ footer {
   transition: 0.5s;
   padding-top: 60px;
   z-index: 10;
+  font-family: "Playfair Display", serif;
 }
 
 .sidenav a {
@@ -384,8 +395,8 @@ footer {
 }
 #navbar {
   position: sticky;
-  background-color: #333;
-  width: 800px;
+  background-color: #5a4261;
+  width: 900px;
   justify-content: center;
   z-index: 99;
   border-radius: 10px;
@@ -393,8 +404,8 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  font-family: "Playfair Display", serif;
 }
-
 /* Navbar links */
 #navbar a {
   color: #f2f2f2;
@@ -407,7 +418,7 @@ footer {
 .sticky {
   position: fixed;
   top: 0;
-  width: 800px;
+  width: 900px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
