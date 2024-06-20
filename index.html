@@ -7,6 +7,8 @@
   gtag('js', new Date());
 
   gtag('config', 'G-JLW2JWQKWJ');
+
+
 </script>
 <head>
   <meta charset="UTF-8">
@@ -15,11 +17,62 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/27bceaeaa2.js" crossorigin="anonymous"></script> 
   <style>
-  
+      @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+    
+    @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+    .poem, .ant-image {
+  flex: 1;
+  height: auto;
+  min-height: 50vh;
+}
+    
+        .poem {
+          background-color: #090909;
+          padding: 20px;
+          color: whitesmoke;
+        }
+    
+    .ant p {
+          padding: 20px;
+          overflow-y: scroll;
+          max-height: 50vh;
+    }
+        .ant-image {
+          background-image: url('theantandtheseed.png');
+          background-size: cover;
+          background-position: center;
+        }
+    
+
+@media (max-width: 1024px) {
+  .ant {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+  }
+}
+
+@media (min-width: 1025px) {
+  .ant {
+    display: flex;
+    flex-direction:row;
+  }
+
+}
+
+    
+       .ant h2 {  
+          font-family: "La Belle Aurore", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+       .ant a {
+            color: whitesmoke;
+        }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div id="top" class="container2">
     <div class="profile-header">
       <div class="profile-image">
         <img src="profilepic.jpg" alt="Profile Picture">
@@ -49,13 +102,7 @@
         I am thirty-five now and have decided to make webdevelopment my lifelong pursuit, so I am in my second year of school for Computer Science and a Minor in Graphic Design for Web.  
        I have made a few things in Python which can be found on my <a href="https://replit.com/@andreacrofoot" alt="replit">Replit</a>. I have made a few fun things in HTML/CSS/JS which can be found on my <a href="https://codepen.io/aemegi" alt="codepen">codepen</a>.
        
-       </p><p>
-        &nbsp;&nbsp; My current project is <a href="https://phpcupcake.shop">PhpCupcakeShop</a>, a PHP framework built 
-        for simplicity and scalability without any PHP dependencies.        </p>
-        <p>&nbsp;&nbsp; While my first novel may always be a work in progress, I have a love for creative writing.  
-          <a href="https://aemegi.github.io/poems/index.html">My animal poetry</a> strives to capture unique perspectives and behaviors of animals.
-        </p>
-        
+       </p>
       
       </p>
       <p>
@@ -65,9 +112,17 @@
 
     </div>
   </div>
-  
-
-        <h1>Here is a rune reading for you:</h1><br>
+  <div id="navbar">
+    <a href="#runes">Rune Reading API</a>
+    <a href="#phpcupcake">PhpCupcakeShop</a>
+    <a href="#pph">Hire Me</a>
+    <a href="#animalpoems">Animal Poetry</a>
+    <a href="#resources">Resources for Hobbies</a>
+    <a href="#top">Top of Page</a>
+  </div> 
+  <hr width="600px" align="center">
+  <div id="runes" class="container">
+        <h1 style="padding-top: 200px;">Here is a rune reading for you:</h1><br>
         <h6>(runes are read from right to left)</h6>
         <div id="runes-container" class="runes-container"></div>
         <h6 style="text-align: right; padding-right: 30%;"><button id="myBtn">Get this API</button></h6>
@@ -89,8 +144,85 @@
                                                                 </div>
 
                                                               </div>
+         
+         </div>
+<hr width="600px" align="center">
+         <div id="phpcupcake" class="container">                                                                                          
+          <section>
+            <div style="position: relative; top: 10vh;">
+           <h2>PhpCupcakeShop</h2>
+           <img src="helloworldcupcake.png" width="150" style="border-radius: 50%; float: left; margin-right: 2vw;">
+           <p>
+            &nbsp;&nbsp; My current main project is <a href="https://phpcupcake.shop">PhpCupcakeShop</a>, a PHP framework built 
+            for simplicity and scalability without any PHP dependencies. PhpCupcakeShop is a framework that aims to provide a code-from-scratch feel for PHP developers. It offers classes and methods out of the box, allowing developers to start building pages quickly. The framework focuses on simplicity and ease of use, with straightforward variables and generic database calls.
+    
+        It follows the MVC (Model-View-Controller) architectural pattern, which helps in organizing code and separating concerns.
+            </p>
+          <div align="center" style="margin: 75px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tGdLNd4HIn0?si=_rJ8-dZcBpr7X2hj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          </div>
+                  </section>
+                   </div>  
+                   
+<hr width="600px" align="center">
+                   <div id="pph" class="container">                                                                                          
+                    <section class="image-section">
+                       <h2 class="section-title"><a href="https://www.peopleperhour.com/site/register?rfrd=11330878.5">Hire me on peopleperhour</a> $35/hr</h2>
+                             <div class="image-container">
+                               <img src="pphpng.png" alt="Placeholder Image" class="image">
+                                       <a href="https://www.peopleperhour.com/site/register?rfrd=11330878.5"><div class="overlay">
+                                         <p class="overlay-text">Reducing Complexity- I can help reduce your codebases maintainability with complexity reduction. We can identify opportunities to simplify logic, eliminate duplications, add semantics, and add clear explanatory comments. You'll have a second set of eyes to view your code and ensure its understandability.
+                                           <br> Consultation- As I am in the process of building my own framework, I am understanding the needs of software when built from the ground up. In addition to virtual pair programming we can simply discuss the end-user needs of the software and how they can be fulfilled. If needed we can do the research together.
+                                            <br>Needing something specific? - I have experience with building tag clouds, image galleries, user authentication and authorization, and shopping carts. We can formulate the middleware needed for your project. </p>
+                                            <p class="phone-texts">Complexity Reduction
+                                             <br> Consultation
+                                              <br>Programming of Middleware</p>
+                                                 </div></a>
+                                                     </div>
+                            </section>
+                             </div> 
+                             <hr width="600px" align="center">
+                             <div id="animalpoems" class="container">                                                                                          
+                              <section>
+                                <div style="position: relative; top: 10vh;">
+                               <h2>Animal Poetry</h2>
+                              <div class="ant" style="width: 800px;">
+                                <div class="poem">
+                                  <h2>The Ant and the Seed</h2>
+                                      <p>
+                                          She walked<br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;with a seed on her back.<br>
+                              The crack in the sidewalk<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;was too deep.<br><br>
+                              She dropped the seed<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;and found another path.<br>
+                              When she came back<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;the seed was still there.<br>
+                              
+                                          
+                                  
+                                  </p>
+                                  
+                                </div>
+                                <div class="ant-image">
+                                </div>
+
+
+                              </div>
+                                  <p>&nbsp;&nbsp; While my first novel may always be a work in progress, I have a love for creative writing.  
+                                    <a href="https://aemegi.github.io/poems/index.html">My animal poetry</a> strives to capture unique perspectives and behaviors of animals. The poems cover a range of animal subjects and themes, from the perspective of different animal characters. The writing style is whimsical and imaginative, with a focus on vivid imagery and unique narratives.
+                                    
+                                  </p>
+
+
+
+                              </div>
+                            </section>
+                        </div>   
+                        <hr width="600px" align="center">
                                                               <section class="resources-section">
-                                                                <div class="container">
+                                                                <div id="resources" class="container">
                                                                   <h2>Some of my favorite Books, Apps and Websites:</h2>
                                                                   <h6>Please note all amazon links are paid affiliate links.</h6>
                                                                   <div class="resources-grid">
@@ -151,27 +283,13 @@
                                                                 </div>
                                                               </section>
 
-                                                                                                                    
-           <section class="image-section">
-              <h2 class="section-title"><a href="https://www.peopleperhour.com/site/register?rfrd=11330878.5" alt="peopleperhour">Hire me on peopleperhour</a> $35/hr</h2>
-                    <div class="image-container">
-                      <a href="https://www.peopleperhour.com/site/register?rfrd=11330878.5" alt="peopleperhour"><img src="pphpng.png" alt="Placeholder Image" class="image"></a>
-                              <div class="overlay">
-                                <p class="overlay-text">Reducing Complexity- I can help reduce your codebases maintainability with complexity reduction. We can identify opportunities to simplify logic, eliminate duplications, add semantics, and add clear explanatory comments. You'll have a second set of eyes to view your code and ensure its understandability.
-                                  <br> Consultation- As I am in the process of building my own framework, I am understanding the needs of software when built from the ground up. In addition to virtual pair programming we can simply discuss the end-user needs of the software and how they can be fulfilled. If needed we can do the research together.
-                                   <br>Needing something specific? - I have experience with building tag clouds, image galleries, user authentication and authorization, and shopping carts. We can formulate the middleware needed for your project. </p>
-                                   <p class="phone-texts">Complexity Reduction
-                                    <br> Consultation
-                                     <br>Programming of Middleware</p>
-                                        </div>
-                                            </div>
-                   </section>
-                    
+
+                                                              <hr width="600px" align="center">
+
+
 <footer>&copy; <span class="name">Andrea Crofoot</span></footer>
 
-
   <script>
-
 // Add smooth scrolling to resource links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -183,6 +301,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
 
 
 

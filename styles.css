@@ -20,7 +20,17 @@ h3, h4, h5, h6 {
     margin: 0 auto;
     padding: 20px;
     font-size: 18px;
+    min-height: 100vh;
   }
+
+  .container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 18px;
+    min-height: 65vh;
+  }
+
   
   .profile-header {
     display: flex;
@@ -166,7 +176,7 @@ h6 {
 
 .rune-card:hover {
   transform: scale(1.05);
-  background-color: #B5B055;
+  background-color: goldenrod;
 }
 
 .rune-card h3 {
@@ -261,8 +271,16 @@ footer {
 }
 
 .section-title {
+  
   text-align: center;
   margin-bottom: 20px;
+}
+
+.section-title a {
+  color: #F2F2F2;
+}
+.section-title a:hover {
+  color: coral;
 }
 
 .image-container {
@@ -292,6 +310,15 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
 }
 @media only screen and (min-width: 1025px) {
 
@@ -305,6 +332,12 @@ footer {
   display: none;
 }
 
+#navbar {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 }
 .image {
   width: 100%;
@@ -328,4 +361,37 @@ footer {
 
 .image-container:hover .overlay {
   opacity: 1;
+}
+
+#navbar {
+  position: sticky;
+  background-color: #333;
+  width: 800px;
+  justify-content: center;
+  z-index: 99;
+  border-radius: 10px;
+}
+
+/* Navbar links */
+#navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  flex-grow: 1;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+hr {
+  color: #58556A;
 }
