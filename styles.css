@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Zeyada&display=swap');
- 
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 body {
   margin: 0;
   padding: 0;
@@ -9,82 +9,83 @@ body {
 } 
 
 h1, h2 {
- 
   font-family: "Playfair Display", serif;
-  }
-h3, h4, h5, h6 {
- 
-    font-family: "Cinzel", serif;
-    }
-  
-  .name {
+}
 
+h3, h4, h5, h6 {
+  font-family: "Cinzel", serif;
+}
+
+.name {
   font-family: "Zeyada", cursive;
-  }
+}
+
 main {
   background-color: #252238;
-    max-width: 900px;
-    margin: 0 auto;
-    border-radius: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.container {
+  padding: 60px;
+  font-size: 18px;
+  min-height: 100vh;
+}
+
+.container2 {
+  padding: 60px;
+  font-size: 18px;
+  min-height: 65vh;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-image img {
+  width: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-info {
+  text-align: right;
+}
+
+.profile-info h1 {
+  color: #6bc2ce;
+  font-family: "VT323", monospace;
+  margin: 0;
+  font-size: 10vh;
+}
+
+.profile-info p {
+  margin: 5px 0 15px;
+  font-size: 8vh;
+  font-family: "Playfair Display", serif;
+}
+
+.profile-content h2 {
+  color: #83c295;
+  margin-top: 30px;
+}
+
+.profile-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.fa-icon {
+  text-decoration: none;
 
 }
-  .container {
-    padding: 60px;
-    font-size: 18px;
-    min-height: 100vh;
-  }
-
-  .container2 {
-    padding: 60px;
-    font-size: 18px;
-    min-height: 65vh;
-  }
-
-  
-  .profile-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  
-  .profile-image img {
-    width: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-  }
-  
-  .profile-info h1 {
-    font-family: "Cinzel", serif;
-    margin: 0;
-    font-size: 28px;
-  }
-  
-  .profile-info p {
-    margin: 5px 0 15px;
-    color: lightgrey;
-
-    font-family: "Playfair Display", serif;
-  }
-  
-
-  
-  .profile-content h2 {
-    margin-top: 30px;
-    
-  }
-  
-  .project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-  }
-  
-  .project-list .project {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 4px;
-  }
-
    /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
