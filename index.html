@@ -101,8 +101,6 @@
         	
         </p>
         <div class="profile-buttons">
-          <a href="https://www.linkedin.com/in/andreacrofoot/" alt="linkedIn" class="fa-icon fa fa-linkedin"></a>
-          <a href="https://www.facebook.com/andrea.crofoot" alt="linkedIn" class="fa-icon fa fa-facebook"></a>
           <a href="https://x.com/aemegi_" alt="twitter" class="fa-icon fa fa-twitter"></a>
           <a href="mailto:aemegi@icloud.com" alt="email" class="fa-icon fa fa-envelope"></a>
           <a href="https://discord.com/invite/jVJYmFz2Ye" alt="discord" class="fa-icon fa-brands fa-discord"></a>
@@ -110,7 +108,6 @@
           <a href="https://github.com/aemegi/" alt="github" class="fa-icon fa fa-github"></a>
           <a href="https://codepen.io/aemegi" alt="codepen" class="fa-icon fa-brands fa-codepen"></a>
           <a href="https://replit.com/@andreacrofoot" alt="replit" class="fa-icon fa-solid fa-r"></a>
-          <a href="https://www.peopleperhour.com/site/register?rfrd=11330878.5" alt="peopleperhour" class="fa-icon fa-solid fa-handshake"></a>
         </div>
       </div>
     </div>
@@ -121,8 +118,24 @@
     <a class="nav-item" href="#top">Top of Page</a>
   </div> 
   <hr width="250px" align="center">
-
-                   
+    <div id="resume" class="container">
+      
+    <h2>Resumé</h2>
+    <p><b>Answering Service Operator</b><sub>2019-2021</sub><i>2 years</i></p>
+    <p><b>Housekeeping & Janitorial</b><sub>2010-2019</sub><i>9 years</i></p>
+    <p><b>Political Research Assistant</b><sub>2009-2010</sub><i>1.5 years</i></p>
+    
+    <h2>My Bucket List</h2>
+    <ul>
+    <li>To see all the United States National Parks and some abroad.</li>
+    <li>To climb the Andes.</li>
+    <li>To find a lifestyle that is not only completely sustainable, but where I actually benefit my local ecosystem. <sub>(I am a part of my local ecosystem.)</sub></li>  
+    </ul>
+    
+    <h2>My Prime Objective</h2>
+    <p>To find gainful employment and never work another day in my life.</p>
+      
+                  </div>             
 <hr width="250px" align="center">
                  
     
@@ -300,49 +313,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 } 
-
-
-    fetch('https://runes-backend.fly.dev/api/runes/reading/')
-      .then(response => response.json())
-      .then(data => {
-        // Get the runes data from the API response
-        const runes = data;
-
-        // Create a container element to hold the runes
-        const container = document.getElementById('runes-container');
-
-        // Loop through the runes and create HTML elements to display them
-        runes.forEach(rune => {
-          // Create a card element for each rune
-          const card = document.createElement('div');
-          card.classList.add('rune-card');
-
-          // Create elements for the rune's name, meaning, and pronunciation
-          const symbolElement = document.createElement('h3');
-          symbolElement.textContent = rune.symbol;
-
-          const nameElement = document.createElement('p');
-          nameElement.textContent = rune.name;
-
-          const pronounceElement = document.createElement('p');
-          pronounceElement.textContent = rune.pronunciation;
-
-          const descriptionElement = document.createElement('p');
-          descriptionElement.textContent = rune.meaning;
-
-          // Append the elements to the card
-          card.appendChild(symbolElement);
-          card.appendChild(nameElement);
-          card.appendChild(pronounceElement);
-          card.appendChild(descriptionElement);
-
-          // Append the card to the container
-          container.appendChild(card);
-        });
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
   </script>
 </body>
 </html>
