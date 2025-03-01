@@ -71,7 +71,8 @@ main {
 }
 
 .profile-info h1 {
-  color: #ffffff;
+  color: #fff;
+  background-color: #000;
   font-family: WildySans;
   font-optical-sizing: auto;
   font-weight: 400;
