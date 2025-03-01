@@ -9,6 +9,10 @@
   font-family: Northwest;
   src: url(NORTHWEST-Light.ttf);
 }
+@font-face {
+  font-family: WildySans;
+  src: url(WildySans.ttf);
+}
 body {
   margin: 0;
   padding: 0;
@@ -67,7 +71,7 @@ main {
 
 .profile-info h1 {
   color: #2e2736;
-  font-family: "Northwest", serif;
+  font-family: "WildySans";
   margin: 0;
   font-size: 10vh;
 }
