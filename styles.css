@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Zeyada&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@font-face {
+  font-family: chickenPie;
+  src: url(Chickenpie.ttf);
+}
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +14,7 @@ body {
 } 
 
 h1, h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "chickenPie", serif;
 }
 
 h3, h4, h5, h6 {
